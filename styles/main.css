@@ -1,5 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap");
 header {
   background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.content_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.nav_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
 }
 
 ul {
@@ -18,5 +39,6 @@ li {
 
 body {
   background-color: black;
+  font-family: "Roboto", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap');
+
+$primary-color:#51C5D1;
+$secundary-color: #F07C63; 
+$font: 'Roboto', sans-serif;
+
+// commentary
+
 header{
     background-color: white;
-    
+    font-family: $font;  
+}
+
+.content_nav{
+    display: flex;  
+    position: relative;
+       
+}
+
+.nav_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
 }
 
 ul{
@@ -22,6 +44,8 @@ li{
 body{
 
     background-color: black;
+    font-family: $font;
+    
 
 
 }
