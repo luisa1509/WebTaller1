@@ -1,0 +1,70 @@
+.nav_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.content_nav{
+    display: flex;  
+    position: relative;
+       
+}
+
+header{
+    background-color: white;
+    
+}
+
+ul{
+    list-style-type: none;
+    color: rgb(39, 39, 39); 
+}
+
+li{
+    float: left;
+    text-align: center;
+    margin-bottom: 0px;  
+    padding: 0px 0px;
+    top: 0px; 
+    margin-right: 10px;
+}
+
+
+
+body{
+
+    background-color: black;
+
+
+}
+
+.description_wacomcintiq{
+    color: white; 
+    background-image: url("img/background1.png");
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav_icons{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding: 40px 40px;
+    align-items: baseline;
+
+}
+
+.nav_icons h6 {
+    text-align: center;
+    color: white;
+}
+
+
+
+
