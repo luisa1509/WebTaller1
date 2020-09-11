@@ -1,45 +1,66 @@
-.content_nav{
-    width: 100%;
+.nav_wrapper{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
 }
+
+.content_nav{
+    display: flex;   
+}
+
 header{
     background-color: white;
-    width: 100%;
-    left: 0; 
-    top: 0; 
-    position: absolute; 
+    
 }
 
 ul{
     list-style-type: none;
-    color: red; 
+    color: rgb(39, 39, 39); 
 }
 
 li{
     float: left;
     text-align: center;
-    width: 10%;
-    padding: 0 4px;
-    top: 10px; 
+    margin-bottom: 0px;  
+    padding: 0px 0px;
+    top: 0px; 
     margin-right: 10px;
-
 }
 
+
+
 body{
-    margin-left:50px;
-    margin-top: 180px; 
+
     background-color: black;
+
+
 }
 
 .description_wacomcintiq{
     color: white; 
     background-image: url("img/background1.png");
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    background-size: cover;
+    background-position: center;
 }
 
-.nav_icons, h6 {
+.nav_icons{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding: 40px 40px;
+    align-items: baseline;
+
+}
+
+.nav_icons h6 {
+    text-align: center;
     color: white;
 }
+
 
 
 
