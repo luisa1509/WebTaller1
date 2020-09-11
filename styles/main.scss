@@ -9,6 +9,12 @@ $font: 'Roboto', sans-serif;
 header{
     background-color: white;
     font-family: $font;  
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: top 0.2s linear;
 }
 
 .content_nav{
@@ -51,21 +57,37 @@ li{
 body{
 
     background-color: black;
-    font-family: $font;
+    font-family: $font;  
 
 }
 
 .description_wacomcintiq{
+    height: 600px;
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 120px;
+    padding-bottom: 30px;
     color: white; 
     background-image: url("./../img/background1.png");
     position: relative;
     width: 100%;
-    margin-left: auto;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__info{
+        width: 40%;
+    }
+
+    &__image{
+        margin: auto;
+    }
 }
 
 .nav_icons{
+    
     margin-top: 120px;
     display: flex;
     flex-wrap: wrap; 
@@ -73,9 +95,11 @@ body{
     padding: 40px 40px;
     align-items: baseline;
 
+    p {
+        text-align: center;
+        color: white;
+    }
+
 }
 
-.nav_icons p {
-    text-align: center;
-    color: white;
-}
+

@@ -2,6 +2,13 @@
 header {
   background-color: white;
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-transition: top 0.2s linear;
+  transition: top 0.2s linear;
 }
 
 .content_nav {
@@ -52,13 +59,31 @@ body {
 }
 
 .description_wacomcintiq {
+  height: 600px;
+  max-width: 1300px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 120px;
+  padding-bottom: 30px;
   color: white;
   background-image: url("./../img/background1.png");
   position: relative;
   width: 100%;
-  margin-left: auto;
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description_wacomcintiq__info {
+  width: 40%;
+}
+
+.description_wacomcintiq__image {
+  margin: auto;
 }
 
 .nav_icons {
