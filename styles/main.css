@@ -23,6 +23,15 @@ header {
   margin: auto;
 }
 
+.nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
 ul {
   list-style-type: none;
   color: #272727;
@@ -40,5 +49,35 @@ li {
 body {
   background-color: black;
   font-family: "Roboto", sans-serif;
+}
+
+.description_wacomcintiq {
+  color: white;
+  background-image: url("./../img/background1.png");
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav_icons {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 40px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.nav_icons p {
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
