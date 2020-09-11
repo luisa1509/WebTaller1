@@ -1,11 +1,15 @@
 .nav_wrapper{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: auto;
+
 }
 
 .content_nav{
-    display: flex;   
+    display: flex;  
+    position: relative;
+       
 }
 
 header{
