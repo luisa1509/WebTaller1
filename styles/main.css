@@ -105,4 +105,21 @@ body {
   text-align: center;
   color: white;
 }
+
+.new_model {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.new_model h1 {
+  color: white;
+}
+
+.description2 {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
