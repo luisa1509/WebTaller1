@@ -37,6 +37,8 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
+  padding: 0px 60px;
+  margin-right: 10px;
 }
 
 ul {
@@ -48,7 +50,7 @@ li {
   float: left;
   text-align: center;
   margin-bottom: 0px;
-  padding: 0px 0px;
+  padding: 0px 20px;
   top: 0px;
   margin-right: 10px;
 }
@@ -84,6 +86,8 @@ body {
 
 .description_wacomcintiq__image {
   margin: auto;
+  border-radius: 1;
+  background-color: white;
 }
 
 .nav_icons {
@@ -121,18 +125,75 @@ body {
 
 .description2 {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description2__text {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.description2__text h3 {
+  text-align: center;
+}
+
+.pencil_description {
+  margin-top: 200px;
 }
 
 .description3 {
+  margin-top: 200px;
   color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.description4 {
+  margin-top: 200px;
 }
 
 .description4__text1 {
   color: white;
+  text-align: center;
+  width: 40%;
 }
 
 .description4__text2 {
   color: white;
+  text-align: center;
+  width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description4__image {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .description5 {
