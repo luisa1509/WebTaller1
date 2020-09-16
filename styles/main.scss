@@ -6,55 +6,6 @@ $font: 'Roboto', sans-serif;
 
 // commentary
 
-header{
-    background-color: white;
-    font-family: $font;  
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    transition: top 0.2s linear;
-}
-
-.content_nav{
-    display: flex;  
-    position: relative;
-       
-}
-
-.nav_wrapper{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-
-}
-
-.nav_menu{
-    display: flex; 
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 0px 60px;
-    margin-right: 10px;
-
-}
-
-ul{
-    list-style-type: none;
-    color: rgb(39, 39, 39); 
-}
-
-li{
-    float: left;
-    text-align: center;
-    margin-bottom: 0px;  
-    padding: 0px 20px;
-    top: 0px; 
-    margin-right: 10px;
-}
-
-
 
 body{
 
@@ -63,119 +14,29 @@ body{
 
 }
 
-.description_wacomcintiq{
-    height: 600px;
-    max-width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 120px;
-    padding-bottom: 30px;
-    color: white; 
-    background-image: url("./../img/background1.png");
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-wrap: wrap;
 
-    &__info{
-        width: 40%;
-    }
 
-    &__image{
-        margin: auto;
-        border-radius: 1;
-        background-color: white;
-    }
-}
 
-.nav_icons{
-    
-    margin-top: 120px;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    padding: 40px 40px;
-    align-items: baseline;
 
-    p {
-        text-align: center;
-        color: white;
-    }
 
-}
 
-.new_model{
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    color: white;
 
-    h1{
-        color: white;   
-    }
-}
 
-.description2{
-    color:white; 
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 200px;
-    justify-content: space-between;
 
-    &__text{
-     
-        text-align: justify;
-        display: flex;
-        flex-wrap: wrap;
-        width: 50%;
-
-        h3{
-            text-align: center;
-        }
-    }
-}
-
-.pencil_description{
-
-    margin-top: 200px;
-}
-
-.description3{
-    margin-top: 200px;
-    color:white; 
-    justify-content: center;
-    text-align: center;
-
-}
-
-.description4{
-    margin-top: 200px;
-    
-    &__text1{
-        color: white;
-        text-align: center;
-        width: 40%;
-    }
-
-    &__text2{
-        color: white;
-        text-align: center;
-        width: 40%;
-        flex-direction: column;
-    }
-
-    &__image{
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-    }
-}
 
 .description5{
     background-color: white;
 }
+
+
+@import 'header';
+@import 'banner';
+@import 'nav_icons';
+@import 'new_model';
+@import 'description2';
+@import 'pencil_description';
+@import 'description3';
+@import 'description4';
 
 
 

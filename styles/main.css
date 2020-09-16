@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap");
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.description5 {
+  background-color: white;
+}
+
 header {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -55,11 +64,6 @@ li {
   margin-right: 10px;
 }
 
-body {
-  background-color: black;
-  font-family: "Roboto", sans-serif;
-}
-
 .description_wacomcintiq {
   height: 600px;
   max-width: 1300px;
@@ -99,10 +103,11 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 40px 40px;
+  padding: 40px 80px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  height: 10px;
 }
 
 .nav_icons p {
@@ -111,6 +116,7 @@ body {
 }
 
 .new_model {
+  margin-top: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -152,15 +158,23 @@ body {
 
 .pencil_description {
   margin-top: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .description3 {
   margin-top: 200px;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 400px 0 400px;
 }
 
 .description4 {
@@ -194,9 +208,5 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.description5 {
-  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

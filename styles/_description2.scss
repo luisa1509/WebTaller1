@@ -1,0 +1,19 @@
+.description2{
+    color:white; 
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 200px;
+    justify-content: space-between;
+
+    &__text{
+     
+        text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+
+        h3{
+            text-align: center;
+        }
+    }
+}

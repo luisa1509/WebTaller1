@@ -1,0 +1,48 @@
+header{
+    background-color: white;
+    font-family: $font;  
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: top 0.2s linear;
+}
+
+.content_nav{
+    display: flex;  
+    position: relative;
+       
+}
+
+.nav_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.nav_menu{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0px 60px;
+    margin-right: 10px;
+
+}
+
+ul{
+    list-style-type: none;
+    color: rgb(39, 39, 39); 
+}
+
+li{
+    float: left;
+    text-align: center;
+    margin-bottom: 0px;  
+    padding: 0px 20px;
+    top: 0px; 
+    margin-right: 10px;
+}
+

@@ -1,0 +1,22 @@
+.description4{
+    margin-top: 200px;
+    
+    &__text1{
+        color: white;
+        text-align: center;
+        width: 40%;
+    }
+
+    &__text2{
+        color: white;
+        text-align: center;
+        width: 40%;
+        flex-direction: column;
+    }
+
+    &__image{
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+}

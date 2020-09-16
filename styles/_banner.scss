@@ -1,0 +1,27 @@
+.description_wacomcintiq{
+    height: 600px;
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    color: white; 
+    background-image: url("./../img/background1.png");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    //background-attachment: fixed;
+
+    &__info{
+        width: 40%;
+    }
+
+    &__image{
+        margin: auto;
+        border-radius: 1;
+        background-color: white;
+    }
+}
