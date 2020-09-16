@@ -195,6 +195,8 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  margin-top: auto;
 }
 
 .description4__image {
@@ -208,5 +210,30 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.opinion {
+  height: 600px;
+  max-width: 1300px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  color: #F07C63;
+  background-image: url("./../img/image 27.png");
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.opinion__info {
+  width: 40%;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
