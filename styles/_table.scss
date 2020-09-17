@@ -1,0 +1,13 @@
+.table_specs{
+    margin-top: 200px;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ 
+
+    &__line{
+        background-color: $primary-color;
+        width: 500px;
+        height: 5px;
+    }
+}

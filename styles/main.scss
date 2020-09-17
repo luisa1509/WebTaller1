@@ -11,6 +11,7 @@ body{
 
     background-color: black;
     font-family: $font;  
+    margin: auto;
 
 }
 
@@ -33,6 +34,8 @@ body{
 @import 'description3';
 @import 'description4';
 @import 'opinion';
+@import 'ad';
+@import 'table';
 
 
 

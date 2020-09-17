@@ -2,6 +2,7 @@
 body {
   background-color: black;
   font-family: "Roboto", sans-serif;
+  margin: auto;
 }
 
 .description5 {
@@ -210,6 +211,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 100px;
 }
 
 .opinion {
@@ -232,8 +234,51 @@ li {
       flex-wrap: wrap;
 }
 
-.opinion__info {
-  width: 40%;
+.opinion__background {
   background-color: white;
+  border-radius: 50%;
+  width: 50%;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opinion__info {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ad {
+  margin-top: 400px;
+  width: 100%;
+}
+
+.table_specs {
+  margin-top: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.table_specs__line {
+  background-color: #51C5D1;
+  width: 500px;
+  height: 5px;
 }
 /*# sourceMappingURL=main.css.map */
