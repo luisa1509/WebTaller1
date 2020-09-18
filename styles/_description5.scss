@@ -1,0 +1,42 @@
+.description5{
+
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__image{
+        margin-top: 100px;
+        
+        img{
+            height: 500px;
+
+        }
+    }
+
+    &__image2{
+        margin-top: auto;
+        
+        img{
+            height: 400px;
+
+        }
+    }
+
+    &__text1{
+        margin-top: 200px;
+        width: 50%;
+        text-align: center;
+        
+
+    }
+
+    &__text2{
+        margin-top: 50px;
+        width: 40%;
+        padding: 0 100px;
+        text-align: center;
+    
+
+    }
+
+}
