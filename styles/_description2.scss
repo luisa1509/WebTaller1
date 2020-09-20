@@ -1,9 +1,16 @@
 .description2{
     color:white; 
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 200px;
     justify-content: space-between;
+
+    img{
+        margin-top: 0;
+        margin-right: 0;
+        background-color: white;
+        height: 350px;
+    }
 
     &__text{
      

@@ -3,11 +3,41 @@
     align-items: center;
     flex-direction: column;
     color: white;
- 
+    width: 60%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    &__image{
+
+        align-items: center;
+        flex-direction: column;
+
+        h3{
+            color: $primary-color; 
+        }
+
+    }
 
     &__line{
         background-color: $primary-color;
-        width: 500px;
+        width: 80%;
         height: 5px;
     }
+
+    &__content{
+        color: white;
+
+        td{
+            padding-left: 30px;
+        }
+
+        tr{
+            padding-bottom: 30px;
+        }
+
+    }
+
+
 }
