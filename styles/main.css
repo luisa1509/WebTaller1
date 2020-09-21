@@ -264,6 +264,44 @@ li {
   margin: auto;
 }
 
+.gallery {
+  margin: auto;
+  margin-top: 200px;
+  width: 80%;
+}
+
+.gallery__thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.gallery__thumbs img {
+  width: 33%;
+  padding: 20px;
+}
+
+.gallery__thumbs img:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.gallery__cont {
+  position: relative;
+}
+
+.gallery__image {
+  width: 100%;
+  padding: 10px;
+}
+
+.gallery__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 .description4 {
   margin-top: 200px;
 }

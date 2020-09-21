@@ -1,0 +1,42 @@
+.gallery{
+    margin: auto;
+    margin-top: 200px;
+    width: 80%;
+
+    &__thumbs{
+        display: flex;
+        width: 100%;
+
+        img{
+            width: 33%;
+            padding: 20px;
+
+
+            &:hover{
+                opacity: .7;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+    &__cont{
+        position: relative;
+
+
+    }
+
+    &__image{
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    &__close{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+    }
+}
