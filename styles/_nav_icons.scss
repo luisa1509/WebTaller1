@@ -14,3 +14,18 @@
     }
 
 }
+
+@media (max-width: 600px){
+
+    .nav_icons{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        height: 800px;
+        align-items: center;
+        margin-bottom: 0;
+    
+
+    }
+    }
