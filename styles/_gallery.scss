@@ -40,3 +40,13 @@
 
     }
 }
+
+.gallery_carrousel {
+    width: 540px;
+    overflow: hidden;
+  
+    &__stripe {
+      display: flex;
+      transition: transform .6s ease;
+    }
+  }
