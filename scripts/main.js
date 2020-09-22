@@ -23,3 +23,9 @@ carrouselSlider.addEventListener('input', function() {
 
 
 
+var options = {
+  width: 400,
+  zoomWidth: 500,
+  offset: { vertical: 0, horizontal: 10 }
+};
+new ImageZoom(document.querySelector('.pencil_description'), options);
