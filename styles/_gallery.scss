@@ -1,12 +1,17 @@
 .gallery_carrousel {
-    padding-top: 200px;
-    margin: auto;
-    width: 873px;
-    overflow: hidden;
+
+  padding-top: 200px;
+  margin: auto;
+  width: 873px;
+  overflow: hidden;
   
     &__stripe {
       display: flex;
       transition: transform .6s ease;
+
+      img{
+        width: 100%;
+      }
     }
 
     &__slider{
@@ -14,4 +19,31 @@
         align-items: center;
         width: 100%;
     }
+  }
+
+  @media (max-width: 600px){
+    .gallery_carrousel {
+      padding-top: 200px;
+      margin: auto;
+      width: 100%;
+      overflow: hidden;
+
+    
+      &__stripe {
+        display: flex;
+        transition: transform .6s ease;
+
+        img{
+          width: 100%;
+        }
+      }
+  
+      &__slider{
+          margin: auto;
+          align-items: center;
+          width: 100%;
+      }
+    }
+  
+
   }
