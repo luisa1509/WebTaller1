@@ -1,3 +1,5 @@
+
+
 const carrousel = document.querySelector('.gallery_carrousel');
 const carrouselStripe = document.querySelector('.gallery_carrousel__stripe');
 let current = 0;
@@ -18,3 +20,6 @@ carrouselSlider.addEventListener('input', function() {
   const value = carrouselSlider.value;
   carrouselStripe.style.transform = 'translate(-' + (width * value) + 'px, 0px)';
 });
+
+
+

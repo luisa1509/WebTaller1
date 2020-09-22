@@ -2,26 +2,34 @@
     width: 100%;
     background-color: white;
     margin-top: 500px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer_content{
     margin-top: 100px;
     background-color: white;
     height: 300px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 
     &__text{
-        margin-top: 100px;
-        width: 80%;
+        
+        width: 60%;
     }
 
     &__line{
-        height: 80%;
-        width: 10px;
+        height: 100%;
+        width: 8px;
         background-color: $primary-color;
         margin: auto; 
+    }
+
+    &__about{
+        width: 40%;
+        
     }
     
 }
