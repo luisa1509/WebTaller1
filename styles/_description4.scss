@@ -16,8 +16,8 @@
         width: 40%;
         flex-direction: column;
         margin-left: auto;
-        margin-top: auto;
         margin-top: 0;
+        padding-bottom: 100px;
     }
 
     &__image{
@@ -26,4 +26,20 @@
         display: flex;
 
     }
+}
+
+@media (max-width: 600px) {
+.description4{
+
+    &__text1{
+        width: 100%;
+    }
+
+    &__text2{
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+
+}   
 }

@@ -24,7 +24,7 @@ carrouselSlider.addEventListener('input', function() {
 
 
 var options = {
-  width: 400,
+  width: 800,
   zoomWidth: 500,
   offset: { vertical: 0, horizontal: 10 }
 };
