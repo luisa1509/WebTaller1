@@ -1,8 +1,12 @@
 .ad{
     margin-top: 200px;
     width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; 
 
-    img{
-        width: 100%; 
+    &__image{
+        width: 40%; 
+        height: 100%;
     }
 }
