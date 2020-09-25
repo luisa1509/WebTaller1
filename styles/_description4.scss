@@ -8,6 +8,10 @@
         text-align: center;
         width: 40%;
 
+        h3{
+            padding-bottom: 50px;
+        }
+
     }
 
     &__text2{
@@ -18,6 +22,10 @@
         margin-left: auto;
         margin-top: 0;
         padding-bottom: 100px;
+
+        h3{
+            padding-bottom: 50px;
+        }
     }
 
     &__image{
@@ -33,11 +41,19 @@
 
     &__text1{
         width: 100%;
+
+        h3{
+            padding-bottom: 50px;
+        }
     }
 
     &__text2{
         width: 100%;
         padding-bottom: 100px;
+
+        h3{
+            padding-bottom: 50px;
+        }
     }
 
 

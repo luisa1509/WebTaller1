@@ -10,11 +10,16 @@
     }
 
 
+
 }
 
 @media (max-width: 600px){
 .pencil_description{
     display: flex;
     flex-direction: column;
+
+    div:last-child{
+        position: static;
+    }
 }
 }

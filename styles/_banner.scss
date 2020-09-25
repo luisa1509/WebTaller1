@@ -18,11 +18,16 @@
         padding-right: 40px;
         padding-top: 120px;
         padding-bottom: 30px;
+
+
+
+        h4{
+            color: $primary-color;
+        }
     }
 
     &__image{
-        margin: auto;
-        background-color: white;
+        margin-top: 200px;
         
     }
 }
@@ -43,6 +48,7 @@
     }
 
     &__image{
+        margin-top: 50px;
         width: 100%;
 
     }

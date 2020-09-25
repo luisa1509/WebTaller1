@@ -33,6 +33,9 @@
         display: flex;
         flex-direction: column;
         margin-top: 100px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
 
 
         &__image{
@@ -43,9 +46,14 @@
             margin-top: 50px;
             text-align: center;
             width: 100%;
+            align-items: center;
+            flex-direction: column;
+
+            
 
             h3{
                 text-align: center;
+                padding-bottom: 50px;
             }
         }
 

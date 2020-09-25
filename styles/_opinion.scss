@@ -29,6 +29,9 @@
         text-align: center;
         position: absolute;
         align-items: center;
+        h3{
+            padding-bottom: 50px;
+        }
 
 
         }
@@ -49,6 +52,10 @@
 
         &__text{
             padding-top: 0;
+
+            h3{
+                padding-bottom: 50px;
+            }
         }
     }
 }

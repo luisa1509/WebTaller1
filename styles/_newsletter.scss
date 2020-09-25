@@ -10,16 +10,31 @@
     color: white; 
     align-items: center;
     text-align: center;
-
+    
     &__text{
         align-items: center;
         padding-top: 100px;
+
+        h3{
+            font-size: 30px;
+            padding-bottom: 50px;
+        }
+
+        p{
+            padding-bottom: 50px;
+        }
+        
 
     }
 
     &__send{
 
         align-items: center;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+
 
         
 
