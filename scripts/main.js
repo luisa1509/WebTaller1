@@ -23,9 +23,21 @@ carrouselSlider.addEventListener('input', function() {
 
 
 
-var options = {
-  width: 800,
-  zoomWidth: 500,
-  offset: { vertical: 0, horizontal: 10 }
-};
-new ImageZoom(document.querySelector('.pencil_description'), options);
+//var options = {
+//  width: 800,
+  //zoomWidth: 500,
+ // offset: { vertical: 0, horizontal: 10 }
+//};
+//new ImageZoom(document.querySelector('.pencil_description'), options);
+
+
+const slider = document.querySelector('.pencil_compare__input');
+const img = document.querySelector('.pencil_compare__images img:last-child');
+
+function handleSlider () {
+  //console.log('hola', slider.value);
+  // img.style.opacity = slider.value;
+  img.style.width = (slider.value * 100) + '%';
+}
+slider.addEventListener('input', handleSlider);
+
