@@ -13,13 +13,21 @@
     
 
     &__info{
-        width: 40%;
+        width: 50%;
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 120px;
         padding-bottom: 30px;
 
+        h3{
+            margin-bottom: 20px;
+        }
 
+
+        p{
+            text-align: left;
+            margin-bottom: 20px;
+        }
 
         h4{
             color: $primary-color;
@@ -27,7 +35,10 @@
     }
 
     &__image{
-        margin-top: 200px;
+        margin-top: 100px;
+
+        height: 400px;
+        width: 400px;
         
     }
 }
@@ -45,9 +56,13 @@
     &__info{
         width: 100%;
         text-align: center;
+        p{
+            text-align: center;
+        }
     }
 
     &__image{
+        
         margin-top: 50px;
         width: 100%;
 
