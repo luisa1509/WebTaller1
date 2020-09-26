@@ -5,8 +5,41 @@
     display: flex;
     flex-wrap: wrap; 
 
+
     &__image{
         width: 40%; 
         height: 100%;
     }
+
+    &__content{
+        padding-top: 10px;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+.ad{
+    margin-top: 200px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; 
+
+    &__image{
+        width: 40%; 
+        height: 100%;
+    }
+
+    &__content{
+        padding-top: 10px;
+        width: 60%;
+        font-size: 8px;
+
+        img{
+            width: 100px;
+            height: 30px;
+        }
+    }
+}
+
 }

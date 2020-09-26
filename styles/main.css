@@ -249,6 +249,46 @@ input[type=button] {
   zoom: 1;
 }
 
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  padding: 5px 5px;
+  border: 0;
+  background-color: #51C5D1;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #278a95;
+}
+
+.btn--secondary {
+  background-color: #F07C63;
+  color: #ffffff;
+}
+
+.btn--secondary:hover {
+  background-color: #d83715;
+}
+
+.btn--success {
+  background-color: #13aa13;
+  color: #ffffff;
+}
+
+.btn--success:hover {
+  background-color: #094e09;
+}
+
+.btn--error {
+  background-color: #fb2d09;
+  color: #ffffff;
+}
+
+.btn--error:hover {
+  background-color: #9b1903;
+}
+
 header {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -310,6 +350,26 @@ li {
   padding: 0px 20px;
   top: 0px;
   margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  header .content_nav img {
+    height: 60px;
+    width: 120px;
+  }
+  ul {
+    list-style-type: none;
+    color: #272727;
+  }
+  li {
+    float: left;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0px 10px;
+    top: 0px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
 }
 
 .description_wacomcintiq {
@@ -422,7 +482,7 @@ li {
   font-size: 40px;
 }
 
-.new_model__btn {
+.new_model .btn {
   margin-top: 50px;
 }
 
@@ -835,6 +895,37 @@ li {
   height: 100%;
 }
 
+.ad__content {
+  padding-top: 10px;
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  .ad {
+    margin-top: 200px;
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ad__image {
+    width: 40%;
+    height: 100%;
+  }
+  .ad__content {
+    padding-top: 10px;
+    width: 60%;
+    font-size: 8px;
+  }
+  .ad__content img {
+    width: 100px;
+    height: 30px;
+  }
+}
+
 .table_specs {
   padding-top: 200px;
   -webkit-box-align: center;
@@ -938,6 +1029,11 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.newsletter__send .input {
+  font-size: 15px;
+  padding: 10px 10px;
 }
 
 .footer {

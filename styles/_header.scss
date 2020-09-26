@@ -54,3 +54,30 @@ li{
     margin-right: 10px;
 }
 
+@media (max-width: 600px){
+    header{
+        .content_nav{
+            img{
+                height: 60px;
+                width: 120px;
+            }
+        }
+    }
+
+    ul{
+        list-style-type: none;
+        color: rgb(39, 39, 39); 
+    }
+    
+    li{
+        float: left;
+        text-align: center;
+        margin-bottom: 0px;  
+        padding: 0px 10px;
+        top: 0px; 
+        margin-right: 10px;
+        font-size: 15px;
+
+    }
+}
+
