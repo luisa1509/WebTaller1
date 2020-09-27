@@ -1187,9 +1187,23 @@ li {
 
 .footer_content__text {
   width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_content__text p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #51C5D1;
+  font-size: 20px;
+  margin: auto;
+  width: 100%;
 }
 
 .footer_content__text ul li {
+  width: 100%;
   font-weight: lighter;
 }
 
@@ -1202,9 +1216,27 @@ li {
 
 .footer_content__about {
   width: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.footer_content__about p {
+  margin: auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #51C5D1;
+  font-size: 20px;
 }
 
 .footer_content__about ul li {
+  width: 100%;
   font-weight: lighter;
 }
 /*# sourceMappingURL=main.css.map */

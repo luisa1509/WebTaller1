@@ -18,12 +18,25 @@
     
 
     &__text{
+
+
+        p{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: $primary-color;
+            font-size: 20px;
+            margin: auto;
+            width: 100%;
+        }
         
         width: 60%;
+        flex-direction: column;
+        
 
         
             ul{
                 li{
+                    width: 100%;
                     font-weight: lighter; 
                 }
             }
@@ -38,10 +51,24 @@
     }
 
     &__about{
+
+        p{
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: $primary-color;
+            font-size: 20px;
+        }
         width: 40%;
+        flex-direction: column;
+        padding-left: 20px;
 
         ul{
+            
             li{
+                width: 100%;
                 font-weight: lighter; 
             }
         }
