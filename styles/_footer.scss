@@ -4,6 +4,7 @@
     margin-top: 500px;
     display: flex;
     flex-direction: row;
+    
 }
 
 .footer_content{
@@ -15,9 +16,12 @@
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
+    height: 250px;
     
 
     &__text{
+        background-color: white;
+        
 
 
         p{
@@ -78,5 +82,8 @@
 }
 
 @media (max-width: 600px){
+    .footer{
+        height: 500px;
+    }
     
 }

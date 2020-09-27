@@ -1091,6 +1091,23 @@ li {
   .table_specs__line {
     width: 100%;
   }
+  .table_specs__content {
+    color: white;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .table_specs__content td {
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  .table_specs__content tr {
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
 }
 
 .newsletter {
@@ -1183,9 +1200,11 @@ li {
           justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
+  height: 250px;
 }
 
 .footer_content__text {
+  background-color: white;
   width: 60%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1238,5 +1257,11 @@ li {
 .footer_content__about ul li {
   width: 100%;
   font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

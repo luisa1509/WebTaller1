@@ -40,6 +40,7 @@
             
             padding-top: 20px;
             padding-right: 20px;
+            
         }
 
         tr{
@@ -56,6 +57,27 @@
 
         &__line{
             width: 100%;
+        }
+
+        &__content{
+            color: white;
+            margin: auto;
+            align-items: center;
+    
+            td{
+                
+                padding-top: 20px;
+                padding-right: 20px;
+                font-size: 15px;
+                font-weight: lighter;
+                
+            }
+    
+            tr{
+                padding-bottom: 20px;
+                font-size: 15px;
+            }
+    
         }
 
     }
