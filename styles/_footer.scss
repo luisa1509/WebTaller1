@@ -20,6 +20,14 @@
     &__text{
         
         width: 60%;
+
+        
+            ul{
+                li{
+                    font-weight: lighter; 
+                }
+            }
+        
     }
 
     &__line{
@@ -31,6 +39,12 @@
 
     &__about{
         width: 40%;
+
+        ul{
+            li{
+                font-weight: lighter; 
+            }
+        }
         
     }
     

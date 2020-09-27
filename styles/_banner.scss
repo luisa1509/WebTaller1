@@ -27,6 +27,7 @@
         p{
             text-align: left;
             margin-bottom: 20px;
+            font-weight: lighter;
         }
 
         h4{
@@ -36,6 +37,7 @@
 
     &__image{
         margin-top: 100px;
+        
 
         height: 400px;
         width: 400px;
@@ -49,7 +51,7 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 0px;
     height: 1000px;
 
 
@@ -63,7 +65,7 @@
 
     &__image{
         
-        margin-top: 50px;
+        margin-top: 10px;
         width: 100%;
 
     }
