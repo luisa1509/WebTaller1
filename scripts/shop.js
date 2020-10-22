@@ -11,21 +11,21 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var db = firebase.firestore();
+//var db = firebase.firestore();
 
 
 const products = [
   {
-    title: 'Celular Motorola Moto One Macro',
-    img: 'https://http2.mlstatic.com/D_NQ_NP_671655-MCO43438392203_092020-V.webp',
+    title: 'Wacom Cintiq Pro 32',
+    img: './../imgShop/Wacom Cintiq Pro 32-1.png',
     price: 499900,
-    description: '',
+    description: 'Un monitor interactivo de ultra alta definición con función multitáctil, diseñado para profesionales de la creación.',
   },
   {
-    title: 'Celular Motorola One Action Color Blanco',
-    img: 'https://http2.mlstatic.com/D_NQ_NP_760318-MCO42908273986_072020-V.webp',
+    title: 'Wacom Cintiq Pro 24',
+    img: './../imgShop/Wacom Cintiq Pro 24-1.png',
     price: 679900,
-    description: '',
+    description: 'Un monitor interactivo de ultra alta definición con función multitáctil, diseñado para profesionales de la creación.',
   },
   {
     title: 'Celular Motorola Moto G8 Plus 64gb',
@@ -42,3 +42,27 @@ const products = [
 ];
 
 const productsList = document.querySelector('.productslist');
+
+// creación de nuevos productos a partir de la lista
+function renderProducts (list) {
+  productsList.innerHTML = '';
+  list.forEach(function (elem) {
+    const newProduct = document.createElement('section');
+    newProduct.classList.add('product');
+  
+    newProduct.innerHTML = `
+    <img class="product__img" src="${elem.img}" alt="">
+    <div class="product__info">
+      <h3 class="product__title">${elem.title}</h3>
+      <p class="productslist__description">${elem.description}</p>
+      <p class="product__price">$ ${elem.price}</p>
+    </div>
+    `;
+  
+    productsList.appendChild(newProduct);
+  });
+}
+
+
+// render inicial con todos los productos
+renderProducts(products);
