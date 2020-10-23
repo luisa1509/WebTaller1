@@ -19,43 +19,210 @@ const products = [
     title: 'Wacom Cintiq Pro 32',
     img: './../imgShop/Wacom Cintiq Pro 32-1.png',
     price: 499900,
+    mail: 'Envio gratis',
     description: 'Un monitor interactivo de ultra alta definición con función multitáctil, diseñado para profesionales de la creación.',
+    category: 'monitores',
+    especifics: 'Con 32 pulg. de resolución 4K (3840 x 2160 pixeles) a tu disposición y una soberbia precisión del color (98 % de Adobe® RGB), sumérgete en cada detalle de tus audaces obras, ya se trate de modelado 3D o ilustración para el desarrollo de videojuegos.',
   },
   {
     title: 'Wacom Cintiq Pro 24',
     img: './../imgShop/Wacom Cintiq Pro 24-1.png',
     price: 679900,
+    mail: '',
     description: 'Un monitor interactivo de ultra alta definición con función multitáctil, diseñado para profesionales de la creación.',
+    category: 'monitores',
+    especifics: 'Resolución de 4K (3840 x 2160 pixeles) en una pantalla LCD de 24 pulg. con una extraordinaria precisión de color (99 % de Adobe® RGB). Podrás ver hasta el último detalle de tu obra magistral y tus proyectos fotográficos o de diseño.',
   },
   {
-    title: 'Celular Motorola Moto G8 Plus 64gb',
-    img: 'https://http2.mlstatic.com/D_NQ_NP_846737-MCO43497294331_092020-V.webp',
+    title: 'Wacom Cintiq Pro 16',
+    img: './../imgShop/Wacom Cintiq Pro 16-1.png',
     price: 649900,
-    description: '',
+    mail: '',
+    description: 'Un monitor interactivo de ultra alta definición con funciones multitáctiles diseñado para profesionales de la creación.',
+    category: 'monitores',
+    especifics: 'Tu trabajo está hecho para verlo. Con una impresionante resolución de 4K (3840 x 2160) y una precisión de color excepcional, no podrás quitar la vista de encima de la pantalla.',
   },
   {
-    title: 'Motorola Moto G8 Power 4g',
-    img: 'https://http2.mlstatic.com/D_NQ_NP_725226-MCO42143648422_062020-V.webp',
+    title: 'Wacom Cintiq Pro 13',
+    img: './../imgShop/Wacom Cintiq Pro 13-1.png',
     price: 699900,
-    description: '',
+    mail: '',
+    description: 'Un monitor interactivo de ultra alta definición con funciones multitáctiles diseñado para profesionales de la creación.',
+    category: 'monitores',
+    especifics: 'Wacom Cintiq Pro 13 es justo lo que necesitas si prefieres trabajar en un lienzo compacto. Es un dispositivo más compacto y ligero que resulta idea para bosquejar y dibujar',
   },
+  {
+    title: 'Cintiq 22HD',
+    img: './../imgShop/Cintiq 22HD-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un monitor interactivo de alta definición diseñado para profesionales de la creación.',
+    category: 'monitores',
+    especifics: 'Trabaja de manera más rápida y más sencilla con ExpressKey™ personalizables, Touch Strips y entradas de tableta con la función multitáctil que te permiten un acceso rápido con un solo toque a los atajos favoritos de tu teclado.',
+  },
+  {
+    title: 'Cintiq 13HD',
+    img: './../imgShop/Cintiq 13HD-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un monitor interactivo delgado, compacto y de alta definición.',
+    category: 'monitores',
+    especifics: 'Obtén todas las innovaciones de nuestras pen tablets profesionales, ahora con la capacidad de trabajar directamente en la pantalla de este Cintiq 13HD compacto. Gran color y resolución, ergonomía profesional y control de sensibilidad a la presión, todo junto en un diseño asequible.',
+  },
+  {
+    title: 'Wacom Cintiq',
+    img: './../imgShop/Wacom Cintiq-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Wacom Cintiq combina lápiz digital y pantalla para ofrecer una experiencia creativa sumamente natural que permita a tu obra alcanzar nuevos niveles de excelencia.',
+    category: 'monitores',
+    especifics: 'El lápiz Wacom Pro Pen 2 y las pantallas Wacom Cintiq (disponibles en los tamaños de 15.6" y 21.5") se alían para que tu sesión creativa sea cómoda y productiva. La pantalla presenta una lámina mate para evitar reflejos que puedan distraerte. La resolución Full HD te brinda una nitidez extraordinaria, para visualizar hasta el último detalle de tu obra. El paralaje reducido también redunda en un control completo, ya que tu cursor se sitúa donde deseas. Todo esto se combina para que dibujar en una Wacom Cintiq aporte una sensación tan natural como dibujar sobre papel.',
+  },
+  {
+    title: 'Wacom MobileStudio Pro 13: i5 64 GB',
+    img: './../imgShop/Wacom MobileStudio Pro-1-2.png',
+    price: 699900,
+    mail: '',
+    description: 'Ideal para bosquejos, ilustraciones, diseño gráfico y edición de imágenes.',
+    category: 'computadores',
+    especifics: 'Intel® CoreTM i5, SSD DE 64 GB, DDR3 DE 4 GB, Intel® IrisTM Graphics 550',
+  },
+  {
+    title: 'Wacom One',
+    img: './../imgShop/Wacom One-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un monitor interactivo creativo de alta definición diseñado para creativos aficionados y pensadores visuales',
+    category: 'monitores',
+    especifics: 'Incluye todos los elementos esenciales para estimular tu vida digital: la sensación natural del lápiz en la pantalla de 13.3", el software creativo incluido o incluso la capacidad de conectarlo a ciertos dispositivos Android. Y también es compatible con las marcas de lápices líderes. Abre un nuevo abanico de posibilidades con Wacom One.',
+  },
+  {
+    title: 'Wacom MobileStudio Pro 16: i5 256 GB',
+    img: './../imgShop/Wacom MobileStudio Pro-2-3.png',
+    price: 699900,
+    mail: '',
+    description: 'Más espacio para dibujar, crear arte conceptual detallado, pintar y esculpir en 3D, trabajar con aplicaciones CAD en 3D, realizar animaciones y editar y retocar imágenes avanzadas.',
+    category: 'computadores',
+    especifics: 'Intel® CoreTM i5, SSD DE 256 GB, DDR3 DE 8 GB Tarjeta gráfica • NVIDIA® Quadro® M600M con GDDR5 VRAM de 2 GB',
+  },
+  {
+    title: 'Bamboo Sketch',
+    img: './../imgShop/Bamboo Sketch-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un lápiz digital con sensibilidad a la presión para bosquejar y concebir ideas tanto en el iPad como en el iPhone.',
+    category: 'lapiz',
+    especifics: 'De tu mente a tu dispositivo iOS: Bamboo Sketch es un lápiz digital de punta fina para bosquejar y dibujar tanto en el iPad como en el iPhone. Conéctalo mediante Bluetooth®, enlázalo con tu aplicación compatible de Wacom favorita y ponte manos a la obra.',
+  },
+  {
+    title: 'Bamboo Fineline',
+    img: './../imgShop/Bamboo Fineline-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un lápiz digital inteligente con sensibilidad a la presión diseñado para ofrecer una sensación de escritura natural en dispositivos táctiles iOS.',
+    category: 'lapiz',
+    especifics: 'Qué nunca se pierdan tus buenas ideas. Bamboo Fineline es un lápiz digital de punta fina especialmente diseñado para escribir y tomar notas con naturalidad en iPad e iPhone.',
+  },
+  {
+    title: 'Bamboo Solo',
+    img: './../imgShop/Bamboo Solo-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un stylus esencial que te permite pulsar, escribir y dibujar con fluidez en la pantalla táctil de tu tableta, smartphone o computadora.',
+    category: 'lapiz',
+    especifics: 'Bamboo Solo es el stylus esencial para pulsar, escribir y dibujar agradablemente en todos los dispositivos con pantalla táctil.',
+  },
+  {
+    title: 'Bamboo Tip',
+    img: './../imgShop/Bamboo Tip-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un lápiz de punta fina que te permite redactar notas con la máxima fidelidad, justo como deseas, en los dispositivos iPhone, iPad y Android.',
+    category: 'lapiz',
+    especifics: 'Solo tienes que encender y ponerte a escribir. Bamboo Tip es un lápiz digital de punta fina con el que podrás plasmar tus ideas rápidamente en tus dispositivos iPhone, iPad y Android.',
+  },
+  {
+    title: 'Wacom MobileStudio Pro 13: i5 128 GB',
+    img: './../imgShop/Wacom MobileStudio Pro-1-2.png',
+    price: 699900,
+    mail: '',
+    description: 'Ideal para bosquejos, ilustraciones, diseño gráfico y edición de imágenes.',
+    category: 'computadores',
+    especifics: 'Intel® CoreTM i5, SSD DE 128 GB, DDR3 DE 8 GB, Intel® IrisTM Graphics 550',
+  },
+  {
+    title: 'Bamboo Ink',
+    img: './../imgShop/Bamboo Ink-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Un lápiz digital inteligente para Windows Ink que ofrece nuevas e ingeniosas maneras de capturar ideas.',
+    category: 'lapiz',
+    especifics: '¿Necesitas una herramienta intuitiva para escribir palabras en la pantalla? Bamboo Ink es la opción más natural. Este lápiz digital es la forma más dinámica de capturar tus pensamientos, redactar notas y anotar documentos.',
+  },
+  {
+    title: 'Wacom MobileStudio Pro 16: i7 512 GB',
+    img: './../imgShop/Wacom MobileStudio Pro-2-3.png',
+    price: 699900,
+    mail: '',
+    description: 'Máxima potencia para dibujar, crear arte conceptual detallado, pintar y esculpir en 3D, trabajar con aplicaciones CAD en 3D, realizar animaciones y editar y retocar imágenes avanzadas.',
+    category: 'computadores',
+    especifics: ' Intel® CoreTM i7, SSD DE 512 GB, DDR3 DE 16 GB, Tarjeta gráfica • NVIDIA® Quadro® M1000M con GDDR5 VRAM de 4 GB, Cámara 3D Intel® RealSenseTM y software para escanear',
+  },
+  {
+    title: 'Wacom Intuos Pro',
+    img: './../imgShop/Wacom One-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Una pen tablet profesional con función multi-touch disponible en los tamaños pequeño, mediano y grande.',
+    category: 'tablet',
+    especifics: 'Wacom Intuos Pro te ofrece el control creativo más natural hasta la fecha.Combinado con el ultrasensible lápiz Wacom Pro Pen 2, nuestra nueva y elegante tableta tiene un aspecto y una sensación formidables. ¿Te gusta empezar tus proyectos en papel? El modelo Paper Edition te permite convertir automáticamente tus bosquejos en papel a archivos digitales mientras dibujas. Justo lo que necesitas para tu próximo logro creativo.',
+  },
+  {
+    title: 'Wacom MobileStudio Pro 13: i7 256 GB',
+    img: './../imgShop/Wacom MobileStudio Pro-1-2.png',
+    price: 699900,
+    mail: '',
+    description: 'Un gran acierto para dibujo, edición de imágenes y retoque, arte conceptual detallado, diseño gráfico y animación en 2D.',
+    category: 'computadores',
+    especifics: 'Intel® CoreTM i7, SSD DE 256 GB,DDR3 DE 8 GB, Intel® IrisTM Graphics 550',
+  },
+  {
+    title: 'Wacom Intuos',
+    img: './../imgShop/Wacom Intuos-1.png',
+    price: 699900,
+    mail: '',
+    description: 'Una pen tablet con un lápiz que ofrece una experiencia simplemente fabulosa. Más sencillo, imposible.',
+    category: 'tablet',
+    especifics: 'Wacom está diseñado para dar vida a tus ideas más exóticas, con un lápiz ligero y ultrapreciso, además de software gratuito descargable* acorde a tu estilo.',
+  },
+ // {
+    //title: '',
+    //img: './../imgShop/Wacom One-1.png',
+    //price: 699900,
+    //mail: '',
+    //description: '',
+    //category: '',
+    //especifics: '',
+  //},
 ];
 
 const productsList = document.querySelector('.productslist');
 
 // creación de nuevos productos a partir de la lista
 function renderProducts (list) {
+  //esto vacia la lista
   productsList.innerHTML = '';
   list.forEach(function (elem) {
+  
     const newProduct = document.createElement('section');
     newProduct.classList.add('product');
   
     newProduct.innerHTML = `
     <img class="product__img" src="${elem.img}" alt="">
     <div class="product__info">
+      <h3 class="product__price">$ ${elem.price}</h3>
       <h3 class="product__title">${elem.title}</h3>
-      <p class="productslist__description">${elem.description}</p>
-      <p class="product__price">$ ${elem.price}</p>
+      <p class="productslist__mail">${elem.mail}</p>
     </div>
     `;
   
@@ -63,6 +230,26 @@ function renderProducts (list) {
   });
 }
 
-
 // render inicial con todos los productos
 renderProducts(products);
+
+const filterBtn = document.querySelector('.filterbtn');
+filterBtn.addEventListener('click', function () {
+  // función slice para tomar una sección de la lista
+  // const filtered = products.slice(1, 3);
+
+  // función filter para filtrar con una condición específica
+  const filtered = products.filter(function (elem) {
+    if(elem.price > 650000) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+
+  // render solo con los productos filtrados
+  renderProducts(filtered);
+});
+
+
+
