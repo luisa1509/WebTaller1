@@ -11,7 +11,11 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-//var db = firebase.firestore();
+const db = firebase.firestore();
+const productsRef = db.collection('products');
+
+const loader = document.querySelector('.loader');
+
 
 
 const products = [
@@ -261,6 +265,14 @@ form.addEventListener('submit', function (event) {
     img: form.image.value,
     price: form.price.value
   };
+
+  db.collection("users").add(newProduct)
+.then(function(docRef) {
+    console.log("Document written with ID: ", docRef.id);
+})
+.catch(function(error) {
+    console.error("Error adding document: ", error);
+});
 
   products.push(newProduct);
 
