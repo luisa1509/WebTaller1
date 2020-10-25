@@ -21,7 +21,7 @@ const products = [
     price: 499900,
     mail: 'Envio gratis',
     description: 'Un monitor interactivo de ultra alta definición con función multitáctil, diseñado para profesionales de la creación.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Con 32 pulg. de resolución 4K (3840 x 2160 pixeles) a tu disposición y una soberbia precisión del color (98 % de Adobe® RGB), sumérgete en cada detalle de tus audaces obras, ya se trate de modelado 3D o ilustración para el desarrollo de videojuegos.',
   },
   {
@@ -30,7 +30,7 @@ const products = [
     price: 679900,
     mail: '',
     description: 'Un monitor interactivo de ultra alta definición con función multitáctil, diseñado para profesionales de la creación.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Resolución de 4K (3840 x 2160 pixeles) en una pantalla LCD de 24 pulg. con una extraordinaria precisión de color (99 % de Adobe® RGB). Podrás ver hasta el último detalle de tu obra magistral y tus proyectos fotográficos o de diseño.',
   },
   {
@@ -39,7 +39,7 @@ const products = [
     price: 649900,
     mail: '',
     description: 'Un monitor interactivo de ultra alta definición con funciones multitáctiles diseñado para profesionales de la creación.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Tu trabajo está hecho para verlo. Con una impresionante resolución de 4K (3840 x 2160) y una precisión de color excepcional, no podrás quitar la vista de encima de la pantalla.',
   },
   {
@@ -48,7 +48,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Un monitor interactivo de ultra alta definición con funciones multitáctiles diseñado para profesionales de la creación.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Wacom Cintiq Pro 13 es justo lo que necesitas si prefieres trabajar en un lienzo compacto. Es un dispositivo más compacto y ligero que resulta idea para bosquejar y dibujar',
   },
   {
@@ -57,7 +57,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Un monitor interactivo de alta definición diseñado para profesionales de la creación.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Trabaja de manera más rápida y más sencilla con ExpressKey™ personalizables, Touch Strips y entradas de tableta con la función multitáctil que te permiten un acceso rápido con un solo toque a los atajos favoritos de tu teclado.',
   },
   {
@@ -66,7 +66,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Un monitor interactivo delgado, compacto y de alta definición.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Obtén todas las innovaciones de nuestras pen tablets profesionales, ahora con la capacidad de trabajar directamente en la pantalla de este Cintiq 13HD compacto. Gran color y resolución, ergonomía profesional y control de sensibilidad a la presión, todo junto en un diseño asequible.',
   },
   {
@@ -75,7 +75,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Wacom Cintiq combina lápiz digital y pantalla para ofrecer una experiencia creativa sumamente natural que permita a tu obra alcanzar nuevos niveles de excelencia.',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'El lápiz Wacom Pro Pen 2 y las pantallas Wacom Cintiq (disponibles en los tamaños de 15.6" y 21.5") se alían para que tu sesión creativa sea cómoda y productiva. La pantalla presenta una lámina mate para evitar reflejos que puedan distraerte. La resolución Full HD te brinda una nitidez extraordinaria, para visualizar hasta el último detalle de tu obra. El paralaje reducido también redunda en un control completo, ya que tu cursor se sitúa donde deseas. Todo esto se combina para que dibujar en una Wacom Cintiq aporte una sensación tan natural como dibujar sobre papel.',
   },
   {
@@ -84,7 +84,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Ideal para bosquejos, ilustraciones, diseño gráfico y edición de imágenes.',
-    category: 'computadores',
+    category: 'computador',
     especifics: 'Intel® CoreTM i5, SSD DE 64 GB, DDR3 DE 4 GB, Intel® IrisTM Graphics 550',
   },
   {
@@ -93,7 +93,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Un monitor interactivo creativo de alta definición diseñado para creativos aficionados y pensadores visuales',
-    category: 'monitores',
+    category: 'monitor',
     especifics: 'Incluye todos los elementos esenciales para estimular tu vida digital: la sensación natural del lápiz en la pantalla de 13.3", el software creativo incluido o incluso la capacidad de conectarlo a ciertos dispositivos Android. Y también es compatible con las marcas de lápices líderes. Abre un nuevo abanico de posibilidades con Wacom One.',
   },
   {
@@ -102,7 +102,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Más espacio para dibujar, crear arte conceptual detallado, pintar y esculpir en 3D, trabajar con aplicaciones CAD en 3D, realizar animaciones y editar y retocar imágenes avanzadas.',
-    category: 'computadores',
+    category: 'computador',
     especifics: 'Intel® CoreTM i5, SSD DE 256 GB, DDR3 DE 8 GB Tarjeta gráfica • NVIDIA® Quadro® M600M con GDDR5 VRAM de 2 GB',
   },
   {
@@ -147,7 +147,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Ideal para bosquejos, ilustraciones, diseño gráfico y edición de imágenes.',
-    category: 'computadores',
+    category: 'computador',
     especifics: 'Intel® CoreTM i5, SSD DE 128 GB, DDR3 DE 8 GB, Intel® IrisTM Graphics 550',
   },
   {
@@ -165,7 +165,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Máxima potencia para dibujar, crear arte conceptual detallado, pintar y esculpir en 3D, trabajar con aplicaciones CAD en 3D, realizar animaciones y editar y retocar imágenes avanzadas.',
-    category: 'computadores',
+    category: 'computador',
     especifics: ' Intel® CoreTM i7, SSD DE 512 GB, DDR3 DE 16 GB, Tarjeta gráfica • NVIDIA® Quadro® M1000M con GDDR5 VRAM de 4 GB, Cámara 3D Intel® RealSenseTM y software para escanear',
   },
   {
@@ -183,7 +183,7 @@ const products = [
     price: 699900,
     mail: '',
     description: 'Un gran acierto para dibujo, edición de imágenes y retoque, arte conceptual detallado, diseño gráfico y animación en 2D.',
-    category: 'computadores',
+    category: 'computador',
     especifics: 'Intel® CoreTM i7, SSD DE 256 GB,DDR3 DE 8 GB, Intel® IrisTM Graphics 550',
   },
   {
@@ -249,6 +249,22 @@ filterBtn.addEventListener('click', function () {
 
   // render solo con los productos filtrados
   renderProducts(filtered);
+});
+
+//subir producto
+const form = document.querySelector('.form');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const newProduct = {
+    title: form.title.value,
+    img: form.image.value,
+    price: form.price.value
+  };
+
+  products.push(newProduct);
+
+  renderProducts(products);
 });
 
 

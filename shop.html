@@ -48,7 +48,37 @@
 
     </article>
 
-    <button class="filterbtn">filtrar</button>
+    <button class="filterbtn">Computadores</button>
+
+    <form class="form">
+        <h2 class="form__title">Nuevo producto</h2>
+    
+        <label class="form__label">
+          Título
+          <input name="title" type="text">
+        </label>
+    
+        <label class="form__label">
+          Imagen
+          <input name="image" type="url">
+        </label>
+    
+        <label class="form__label">
+          Precio
+          <input name="price" type="number">
+        </label>
+
+        <label class="form__label">
+            Envio
+            <input name="mail" type="number">
+        </label>
+        
+    
+        <button>
+          Guardar
+        </button>
+      </form>
+    
 
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
