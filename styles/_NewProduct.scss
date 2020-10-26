@@ -20,3 +20,11 @@
       color: white;
     }
   }
+
+  .loader {
+    display: none;
+  
+    &--show {
+      display: block;
+    }
+  }
