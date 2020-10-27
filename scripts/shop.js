@@ -225,7 +225,7 @@ function renderProducts (list) {
     <div class="product__info">
       <h3 class="product__title">${elem.title}</h3>
       <p class="product__price">$ ${elem.price}</p>
-      <p class="productslist__mail">${elem.mail}</p>
+      <p class="productslist__delivery">${elem.mail}</p>
       <button class="product__delete">Eliminar</button>
       <button class="product__edit">Editar</button>
     </div>
@@ -312,6 +312,20 @@ const form = document.querySelector('.form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
+  var storageRef = firebase.storage().ref;
+  //referencia
+  var newImageRef = storageRef.child();
+  var file = form.imageFile.files[0]; // use the Blob or File API
+  newImageRef.put(file).then(function(snapshot) {
+  console.log('Uploaded a blob or file!');
+  });
+
+  //envio
+  if(form.delivery.checked){
+    
+  }
+  form.delivery.checked;
+
   const newProduct = {
     title: form.title.value,
     img: form.image.value,
@@ -332,7 +346,7 @@ if(selectedElem){
     form.title.value = '';
     //form.img.value = '';
     form.price.value = '';
-    form.mail.value = '';
+    form.delivery.value = '';
     selectedElemId = null;
 
   })

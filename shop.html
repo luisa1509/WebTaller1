@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
                 <li>Descubra</li>
                 <li>Productos</li>
                 <li>Soporte</li>
- 
+
             </ul>
         </div>
         <div class="nav_menu">
@@ -30,16 +31,17 @@
     </div>
 
 </header>
+
 <body>
 
     <p class="loader">Cargando...</p>
-   
+
     <aside>
 
     </aside>
 
     <article class="productslist">
-        
+
 
         <img class="productslist__img" src="">
         <div class="productslist__info">
@@ -54,15 +56,15 @@
 
     <form class="form">
         <h2 class="form__title">Nuevo producto</h2>
-    
+
         <label class="form__label">
-          Título
-          <input name="title" type="text">
+            Título
+            <input name="title" type="text">
         </label>
-    
+
         <label class="form__label">
-          Imagen
-          <input name="image" type="url">
+            Imagen
+            <input name="image" type="url">
         </label>
 
         <label class="form__label">
@@ -73,33 +75,45 @@
                 <option>Monitores</option>
                 <option>Lapices</option>
                 <option>tablets</option>
-    
+
             </select>
 
         </label>
-    
-    
+
+
         <label class="form__label">
-          Precio
-          <input name="price" type="number">
+            Precio
+            <input name="price" type="number">
         </label>
 
         <label class="form__label">
-            Envio
-            <input name="mail" type="text">
+
+            <input name="delivery" type="checkbox" />
+            Envio Gratis
         </label>
-        
-    
+
+        <label class="form__label">
+            Descripción
+            <input name="description" type="text">
+        </label>
+
+        <input name="imageFile" type="file" id="">
+
+
+
+
         <button>
-          Guardar
+            Guardar
         </button>
-      </form>
-    
+    </form>
+
 
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
     <script src="./scripts/shop.js"></script>
 
 </body>
+
 </html>
