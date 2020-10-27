@@ -14,6 +14,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const productsRef = db.collection('products');
 const loader = document.querySelector('.loader');
+let selectedElemId = null;
 
 
 
@@ -211,29 +212,6 @@ const products = [
 
 const productsList = document.querySelector('.productslist');
 
-// creación de nuevos productos a partir de la lista
-function renderProducts (list) {
-  //esto vacia la lista
-  productsList.innerHTML = '';
-  list.forEach(function (elem) {
-  
-    const newProduct = document.createElement('section');
-    newProduct.classList.add('product');
-  
-    newProduct.innerHTML = `
-    <img class="product__img" src="${elem.img}" alt="">
-    <div class="product__info">
-      <h3 class="product__price">$ ${elem.price}</h3>
-      <h3 class="product__title">${elem.title}</h3>
-      <p class="productslist__mail">${elem.mail}</p>
-    </div>
-    `;
-
-    
-  
-    productsList.appendChild(newProduct);
-  });
-}
 
 // creación de nuevos productos a partir de la lista
 function renderProducts (list) {
@@ -247,6 +225,7 @@ function renderProducts (list) {
     <div class="product__info">
       <h3 class="product__title">${elem.title}</h3>
       <p class="product__price">$ ${elem.price}</p>
+      <p class="productslist__mail">${elem.mail}</p>
       <button class="product__delete">Eliminar</button>
       <button class="product__edit">Editar</button>
     </div>
@@ -275,6 +254,9 @@ function renderProducts (list) {
     const editBtn = newProduct.querySelector('.product__edit');
     editBtn.addEventListener('click', function() {
       form.title.value = elem.title;
+      form.price.value = elem.price;
+      form.mail.value = elem.mail;
+      selectedElemId = elem.id;
     });
 
     productsList.appendChild(newProduct);
@@ -319,7 +301,7 @@ filterBtn.addEventListener('click', function () {
   });
 
   // render solo con los productos filtrados
-  renderProducts(filtered);
+  //renderProducts(filtered);
 });
 
 
@@ -338,7 +320,29 @@ form.addEventListener('submit', function (event) {
   };
 
 loader.classList.add('loader--show');
-productsRef // referencia de la colección
+//si existen selectedElemId quiere decir que va a editar
+if(selectedElemId){
+  productsRef
+  .doc(selectedElemId.id)//seleccione el producto con ese id
+  .set(newProduct)//sobreescriba la info existente
+  .then(function(docRef) {
+    //console.log("Document written with ID: ", docRef.id);
+    
+    getProducts();
+    form.title.value = '';
+    form.img.value = '';
+    form.price.value = '';
+    form.mail.value = '';
+    selectedElemId = null;
+
+  })
+  .catch(function(error) {
+    console.error("Error adding document: ", error);
+});
+
+}else{
+  //si no existe es porque es un nuevo producto
+  productsRef // referencia de la colección
 .add(newProduct) // cree un nuevo elemento en la colección
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
@@ -350,6 +354,10 @@ productsRef // referencia de la colección
   products.push(newProduct);
 
   renderProducts(products);
+}
+
+
+
 });
 
 
