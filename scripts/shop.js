@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const productsRef = db.collection('products');
 const loader = document.querySelector('.loader');
-let selectedElemId = null;
+let selectedElem = null;
 
 
 
@@ -256,7 +256,7 @@ function renderProducts (list) {
       form.title.value = elem.title;
       form.price.value = elem.price;
       form.mail.value = elem.mail;
-      selectedElemId = elem.id;
+      selectedElem = elem.id;
     });
 
     productsList.appendChild(newProduct);
@@ -321,16 +321,16 @@ form.addEventListener('submit', function (event) {
 
 loader.classList.add('loader--show');
 //si existen selectedElemId quiere decir que va a editar
-if(selectedElemId){
+if(selectedElem){
   productsRef
-  .doc(selectedElemId.id)//seleccione el producto con ese id
+  .doc(selectedElem)//seleccione el producto con ese id
   .set(newProduct)//sobreescriba la info existente
   .then(function(docRef) {
     //console.log("Document written with ID: ", docRef.id);
     
     getProducts();
     form.title.value = '';
-    form.img.value = '';
+    //form.img.value = '';
     form.price.value = '';
     form.mail.value = '';
     selectedElemId = null;
