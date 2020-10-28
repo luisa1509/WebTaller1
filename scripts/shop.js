@@ -225,12 +225,19 @@ function renderProducts (list) {
     <div class="product__info">
       <h3 class="product__title">${elem.title}</h3>
       <p class="product__price">$ ${elem.price}</p>
-      <p class="productslist__delivery">${elem.mail}</p>
+      <p class="product__delivery">Envío Gratis</p>
       <button class="product__delete">Eliminar</button>
       <button class="product__edit">Editar</button>
     </div>
     `;
 
+  //envio
+  const deliveryFree = newProduct.querySelector('.product__delivery');
+  
+  if(form.delivery.checked){
+    loader.classList.add('.product__delivery');
+  }
+    
     // seleccionamos el botón "Eliminar" que se acaba de crear en este elemento
     const deleteBtn = newProduct.querySelector('.product__delete');
     deleteBtn.addEventListener('click',function(){
@@ -255,7 +262,8 @@ function renderProducts (list) {
     editBtn.addEventListener('click', function() {
       form.title.value = elem.title;
       form.price.value = elem.price;
-      form.mail.value = elem.mail;
+      form.delivery.checked = elem.delivery;
+      form.category.value = elem.category;
       selectedElem = elem.id;
     });
 
@@ -314,23 +322,20 @@ form.addEventListener('submit', function (event) {
 
   var storageRef = firebase.storage().ref;
   //referencia
-  var newImageRef = storageRef.child();
-  var file = form.imageFile.files[0]; // use the Blob or File API
-  newImageRef.put(file).then(function(snapshot) {
-  console.log('Uploaded a blob or file!');
-  });
+  //var newImageRef = storageRef.child();
+  //var file = form.imageFile.files[0]; // use the Blob or File API
+  //newImageRef.put(file).then(function(snapshot) {
+  //console.log('Uploaded a blob or file!');
+  //});
 
-  //envio
-  if(form.delivery.checked){
-    
-  }
-  form.delivery.checked;
-
+  
+  
   const newProduct = {
     title: form.title.value,
     img: form.image.value,
     price: form.price.value,
-    //category: form.category.value,
+    category: form.category.value,
+    delivery: form.delivery.checked,
   };
 
 loader.classList.add('loader--show');
@@ -346,7 +351,8 @@ if(selectedElem){
     form.title.value = '';
     //form.img.value = '';
     form.price.value = '';
-    form.delivery.value = '';
+    form.delivery.checked = '';
+    form.category.value = '';
     selectedElemId = null;
 
   })
