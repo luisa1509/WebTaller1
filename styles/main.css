@@ -296,7 +296,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
   -webkit-transition: top 0.2s linear;
   transition: top 0.2s linear;
 }
@@ -329,7 +328,7 @@ header {
   margin: auto;
   padding: 0px 60px;
   margin-right: 10px;
-  display: none;
+  z-index: 10;
 }
 
 .nav_menu img {
@@ -1277,7 +1276,6 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
-  margin-right: 0;
 }
 
 .product {

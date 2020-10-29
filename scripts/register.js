@@ -13,12 +13,16 @@ register.addEventListener('.submit',function(event){
 firebase.auth().createUserWithEmailAndPassword(email, password)
 .then(function(credentials){
 
+  console.log(credentials);
+  console.log(credentials.user.uid)
+
  const uid = credentials.user.uid;
  usersRef.doc(uid).set({
     email:email,
- }
-     
- );
+ })
+ .then(function () {
+  window.location.href = 'shop.html';
+});
  
 
 })

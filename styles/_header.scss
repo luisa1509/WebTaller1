@@ -5,7 +5,6 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
     transition: top 0.2s linear;
 }
 
@@ -20,6 +19,7 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
+    
 
 }
 
@@ -29,7 +29,8 @@ header{
     margin: auto;
     padding: 0px 60px;
     margin-right: 10px;
-    display: none;
+    z-index: 10;
+  
 
     img{
         width: 30px;
