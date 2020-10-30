@@ -1,10 +1,28 @@
 
+.body_shop{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 200px;
+}
+.shop_filter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+
+}
+
+
+
 .productslist{
-    margin-top: 200px;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    
+    
     
 
 }
@@ -89,22 +107,31 @@
 }
 
 .nav_filter{
-  margin-top: 200px;
+  width: 100%;
+
+}
+
+.filterbtn{
+  margin-right: 20px;
 }
 
 .nav_navigation{
   margin-top: 0px;
   color: white;
-  width: 40%;
+  width: 20%;
   justify-content: space-around;
+  padding-right: 20px;
   
   &__title{
     margin-bottom: 20px;
+    border-bottom: 5px solid $secundary_color;
+    font-size: 20px;
   }
 
   &__order{
     margin: auto;
     font-weight: lighter;
+    
     
 
   }

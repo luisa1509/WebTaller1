@@ -21,48 +21,78 @@
 
     </div>
 
+    <div class="auth">
+        <div class="auth__without hidden">
+            <a href="/iniciar-sesion.html">Iniciar sesión</a>
+            <a href="/register.html">Registrarse</a>
+
+        </div>
+
+        <div class="auth__with hidden">
+            <a href="/perfil.html" class="auth__profile">
+                <img src="" alt="">
+                <span>Luisa</span>
+            </a>
+            <a href="#" class="auth__signout">
+                Cerrar sesión
+            </a>
+
+        </div>
+
+    </div>
+
 </header>
 
 <body>
 
-    <p class="loader">Cargando...</p>
+    <div class="body_shop">
 
-    <section class="nav_filter">
-    <button class="filterbtn btn">Computadores</button>
-    <button class="filterbtn btn">Monitores</button>
-    <button class="filterbtn btn">Lapices</button>
-    <button class="filterbtn btn">Tablets</button>
-    </section>
+        <p class="loader">Cargando...</p>
 
-    <aside class="nav_navigation">
-        <h3 class="nav_navigation__title">Productos</h3>
-        <div class="nav_navigation__order">
-            <ul>
-                <li>Mayor precio</li>
-                <li>Menor precio</li>
-                <li>De la A a la Z</li>
-                <li>De la Z a la A</li>
-                <li>Envio gratis</li>
-                <li>Productos nuevos</li>
- 
-            </ul>
+
+
+        <aside class="nav_navigation">
+            <h3 class="nav_navigation__title">Productos</h3>
+            <div class="nav_navigation__order">
+                <ul>
+                    <li>Mayor precio</li>
+                    <li>Menor precio</li>
+                    <li>De la A a la Z</li>
+                    <li>De la Z a la A</li>
+                    <li>Envio gratis</li>
+                    <li>Productos nuevos</li>
+
+                </ul>
+            </div>
+
+        </aside>
+
+        <div class="shop_filter">
+
+
+
+
+            <section class="nav_filter">
+                <button class="filterbtn btn">Computadores</button>
+                <button class="filterbtn btn">Monitores</button>
+                <button class="filterbtn btn">Lapices</button>
+                <button class="filterbtn btn">Tablets</button>
+            </section>
+
+            <article class="productslist">
+
+
+                <img class="productslist__img" src="">
+                <div class="productslist__info">
+                    <h3 class="productslist__price"></h3>
+                    <h3 class="productslist__title">Titulo</h3>
+                    <p class="productslist__mail"></p>
+                </div>
+
+            </article>
         </div>
+    </div>
 
-    </aside>
-
-    <article class="productslist">
-
-
-        <img class="productslist__img" src="">
-        <div class="productslist__info">
-            <h3 class="productslist__price"></h3>
-            <h3 class="productslist__title">Titulo</h3>
-            <p class="productslist__mail"></p>
-        </div>
-
-    </article>
-
-    
 
     <form class="form">
         <h2 class="form__title">Nuevo producto</h2>
@@ -122,7 +152,9 @@
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
     <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/auth.js"></script>
     <script src="./scripts/shop.js"></script>
 
 </body>

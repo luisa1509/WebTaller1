@@ -253,8 +253,10 @@ input[type=button] {
 
 .btn {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-weight: normal;
+  font-size: 20px;
   padding: 5px 5px;
+  border-radius: 5px;
   border: 0;
   background-color: #51C5D1;
   color: #ffffff;
@@ -1266,8 +1268,21 @@ header {
   }
 }
 
-.productslist {
+.body_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
   margin-top: 200px;
+}
+
+.shop_filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1278,6 +1293,18 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
+}
+
+.productslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .product {
@@ -1374,19 +1401,26 @@ header {
 }
 
 .nav_filter {
-  margin-top: 200px;
+  width: 100%;
+}
+
+.filterbtn {
+  margin-right: 20px;
 }
 
 .nav_navigation {
   margin-top: 0px;
   color: white;
-  width: 40%;
+  width: 20%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-right: 20px;
 }
 
 .nav_navigation__title {
   margin-bottom: 20px;
+  border-bottom: 5px solid #F07C63;
+  font-size: 20px;
 }
 
 .nav_navigation__order {

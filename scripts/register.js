@@ -5,12 +5,13 @@ const register = document.querySelector('.register');
 register.addEventListener('submit', function (event) {
   event.preventDefault();
 
+  const name = register.name.value;
   const email = register.email.value;
   const password = register.password.value;
 
 
   //registro de usuarios nuevos
-  firebase.auth().createUserWithEmailAndPassword(email, password)
+  firebase.auth().createUserWithEmailAndPassword(name, email, password)
     .then(function (credentials) {
 
       console.log(credentials);
@@ -18,6 +19,7 @@ register.addEventListener('submit', function (event) {
 
       const uid = credentials.user.uid;
       usersRef.doc(uid).set({
+        name: name,
         email: email,
       })
         .then(function () {

@@ -10,8 +10,10 @@
   .btn {
       
     font-family: $font;
-    font-size: 12px;
+    font-weight: normal;
+    font-size: 20px;
     padding: 5px 5px;
+    border-radius: 5px;
     border: 0;
     @include btnModifier($primary-color);
   
