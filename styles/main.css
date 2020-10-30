@@ -4,6 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
   margin: auto;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .description5 {
@@ -334,15 +336,15 @@ header {
 .nav_menu img {
   width: 30px;
   height: 30px;
-  padding: 0 20px;
+  margin: 20px;
 }
 
-ul {
+.nav_wrapperr {
   list-style-type: none;
   color: #51C5D1;
 }
 
-li {
+.nav_wrapperrr {
   float: left;
   text-align: center;
   margin-bottom: 0px;
@@ -1322,6 +1324,8 @@ li {
 }
 
 .form {
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1350,5 +1354,43 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
+}
+
+.form__error {
+  color: red;
+  font-weight: lighter;
+}
+
+.loader {
+  display: none;
+}
+
+.loader--show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav_filter {
+  margin-top: 200px;
+}
+
+.nav_navigation {
+  margin-top: 0px;
+  color: white;
+  width: 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav_navigation__title {
+  margin-bottom: 20px;
+}
+
+.nav_navigation__order {
+  margin: auto;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=main.css.map */

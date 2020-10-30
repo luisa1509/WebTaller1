@@ -1,3 +1,4 @@
+
 .productslist{
     margin-top: 200px;
     display: flex;
@@ -48,6 +49,8 @@
   
   
   .form {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -66,4 +69,43 @@
       flex-direction: column;
       margin-bottom: 20px;
     }
+
+    &__error{
+      color: red;
+      font-weight: lighter;
+    }
   }
+
+  .loader{
+    display: none;
+
+    &--show{
+      display:block;
+    }
+  }
+
+.hidden{
+  display: none;
+}
+
+.nav_filter{
+  margin-top: 200px;
+}
+
+.nav_navigation{
+  margin-top: 0px;
+  color: white;
+  width: 40%;
+  justify-content: space-around;
+  
+  &__title{
+    margin-bottom: 20px;
+  }
+
+  &__order{
+    margin: auto;
+    font-weight: lighter;
+    
+
+  }
+}
