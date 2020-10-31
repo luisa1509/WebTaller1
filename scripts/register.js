@@ -11,7 +11,7 @@ register.addEventListener('submit', function (event) {
 
 
   //registro de usuarios nuevos
-  firebase.auth().createUserWithEmailAndPassword(name, email, password)
+  firebase.auth().createUserWithEmailAndPassword( email, password)
     .then(function (credentials) {
 
       console.log(credentials);
