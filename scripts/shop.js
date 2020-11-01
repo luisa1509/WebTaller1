@@ -16,8 +16,11 @@ const productsList = document.querySelector('.productslist');
 function renderProducts (list) {
   productsList.innerHTML = '';
   list.forEach(function (elem) {
-    const newProduct = document.createElement('article');
+    const newProduct = document.createElement('a');
     newProduct.classList.add('product');
+
+    const url = `producto.html?${elem.id}-${elem.title}`;
+    newProduct.setAttribute('href', url);
 
     newProduct.innerHTML = `
     <img class="product__img" src="${elem.img}" alt="">
