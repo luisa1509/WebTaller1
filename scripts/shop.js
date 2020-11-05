@@ -33,6 +33,18 @@ function renderProducts (list) {
     </div>
     `;
 
+    if(elem.storageImgs) {
+      elem.storageImgs.forEach(function(imageRef) {
+        storageRef.child(imageRef).getDownloadURL().then(function(url) {
+          // Or inserted into an <img> element:
+          var img = newProduct.querySelector('img');
+          img.src = url;
+        }).catch(function(error) {
+          // Handle any errors
+        });
+      })
+    }
+
   //envio
   const deliveryFree = newProduct.querySelector('.product__delivery');
   
