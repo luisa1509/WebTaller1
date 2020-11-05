@@ -5,7 +5,7 @@ const productsRef = db.collection('products');
 const loader = document.querySelector('.loader');
 let selectedElem = null;
 
-
+var storageRef = firebase.storage().ref();
 
 const products = [];
 
@@ -116,20 +116,13 @@ filterBtn.addEventListener('click', function () {
 
 
 
-
+var imagePaths = [];
 //subir producto
 const form = document.querySelector('.form');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  var storageRef = firebase.storage().ref;
-  //referencia
-  //var newImageRef = storageRef.child();
-  //var file = form.imageFile.files[0]; // use the Blob or File API
-  //newImageRef.put(file).then(function(snapshot) {
-  //console.log('Uploaded a blob or file!');
-  //});
-
+  
   
   
   const newProduct = {
@@ -138,6 +131,7 @@ form.addEventListener('submit', function (event) {
     price: form.price.value,
     category: form.category.value,
     delivery: form.delivery.checked,
+    storageImgs: imagePaths,
   };
 
 loader.classList.add('loader--show');
@@ -184,6 +178,53 @@ if(selectedElem){
 
 
 });
+
+//storage
+
+// input file single, repeated
+const images = form.querySelectorAll('.form__imginput');
+images.forEach(function(group, index) {
+  const input = group.querySelector('input');
+  const img = group.querySelector('img');
+  input.addEventListener('change', function () {
+  
+    // Create a reference to 'mountains.jpg'
+    var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*999999999)}.png`);
+  
+    var file = input.files[0]; // use the Blob or File API
+  
+    var reader = new FileReader();
+    reader.readAsDataURL(file); // convert to base64 string
+    reader.onload = function(e) {
+      img.src = e.target.result;
+    }
+  
+    newImageRef.put(file).then(function(snapshot) {
+      console.log(snapshot)
+      console.log('Uploaded a blob or file!');
+      imagePaths[index] = snapshot.metadata.fullPath;
+    });
+  });
+});
+
+
+// input file multiple
+const fileMulti = document.querySelector('.filemulti');
+fileMulti.addEventListener('change', function() {
+
+  Array.from(fileMulti.files).forEach(function(file, index) {
+
+    console.log(file);
+    var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*999999999)}.jpg`);
+
+    newImageRef.put(file).then(function(snapshot) {
+      console.log(snapshot)
+      console.log('Uploaded a blob or file!');
+      imagePaths[index] = snapshot.metadata.fullPath;
+    });
+  })
+});
+
 
 
 
