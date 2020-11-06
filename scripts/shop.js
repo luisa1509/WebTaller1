@@ -78,6 +78,7 @@ function renderProducts (list) {
       form.price.value = elem.price;
       form.delivery.checked = elem.delivery;
       form.category.value = elem.category;
+      form.description.value = elem.description;
       selectedElem = elem.id;
     });
 
@@ -143,6 +144,7 @@ form.addEventListener('submit', function (event) {
     price: form.price.value,
     category: form.category.value,
     delivery: form.delivery.checked,
+    description: form.description.value,
     storageImgs: imagePaths,
   };
 
@@ -162,6 +164,7 @@ if(selectedElem){
     form.price.value = '';
     form.delivery.checked = '';
     form.category.value = '';
+    form.description.value = '';
     selectedElemId = null;
 
   })

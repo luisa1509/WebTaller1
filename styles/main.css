@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,700&display=swap");
 body {
-  background-color: black;
   font-family: "Roboto", sans-serif;
   margin: auto;
   position: relative;
@@ -1268,6 +1267,10 @@ header {
   }
 }
 
+.bodyfull {
+  background-color: black;
+}
+
 .body_shop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1425,6 +1428,66 @@ header {
 
 .nav_navigation__order {
   margin: auto;
+  font-weight: lighter;
+}
+
+.details {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: auto;
+  width: 80%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #1f2327;
+}
+
+.details .details_contain {
+  width: 60%;
+}
+
+.details .details_contain__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: 20px;
+}
+
+.details .details_contain__image img {
+  width: 400px;
+}
+
+.details .details_contain__description {
+  margin: 20px;
+}
+
+.details__info {
+  margin: 20px;
+}
+
+.details__info__title {
+  color: #51C5D1;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.details__info h2 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.details__info h2__price {
+  font-size: 48px;
   font-weight: lighter;
 }
 /*# sourceMappingURL=main.css.map */

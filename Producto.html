@@ -6,15 +6,29 @@
   <title>Producto</title>
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="bodyfull">
 
   <article class="details hidden">
 
-    <h1>El producto</h1>
+  <div class="details_contain">
+    <div class="details_contain__image">
+      <img src="https://http2.mlstatic.com/portatil-acer-c54-celeron-4g-dd-500-gb-156-win10h-D_NQ_NP_697637-MCO42601977713_072020-O.webp" />
   
-    <img src="https://http2.mlstatic.com/portatil-acer-c54-celeron-4g-dd-500-gb-156-win10h-D_NQ_NP_697637-MCO42601977713_072020-O.webp" />
+    </div>
   
-    <h2>Precio: <span>$ 600.000</span></h2>
+    <div class="details_contain__description">
+      <p>Lorem ipsum dolor sit</p>
+    </div>
+  
+  </div>
+
+  <div class="details__info">
+    <h1 class="details__info__title">El producto</h1>
+    <h2>Precio: $<span class="details__info__price">$ 600.000</span></h2>
+    <button class="btn">Agregar al carrito</button>
+
+  </div>
+    
   </article>
 
   <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>

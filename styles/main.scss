@@ -10,7 +10,7 @@ $font: 'Roboto', sans-serif;
 
 body{
 
-    background-color: black;
+    
     font-family: $font;  
     margin: auto;
     position: relative;
@@ -47,6 +47,7 @@ body{
 @import 'footer';
 //shop
 @import 'shop';
+@import 'product';
 
 
 

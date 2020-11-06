@@ -23,7 +23,9 @@ window.addEventListener('load', function () {
       title.innerText = product.title;
   
       document.querySelector('img').setAttribute('src', product.img);
+      document.querySelector('p').innerText = product.description;
       document.querySelector('h2 span').innerText = product.price;
+      
   
       document.querySelector('.details').classList.remove('hidden');
     })
