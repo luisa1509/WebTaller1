@@ -127,6 +127,51 @@ filterBtn.addEventListener('click', function () {
   //renderProducts(filtered);
 });
 
+//filtrar
+
+function filterProducts() {
+  filters.forEach(function (fi) {
+    fi.addEventListener('change', function () {
+      if (fi.checked) {
+        var filterNow;
+        switch (fi.computer) {
+          case 'computer':
+            filterNow = productsRef.where('category', "==", "computer");
+        break;
+          case 'tablet':
+            filterNow = productsRef.where('category', "==", "tablet");
+            break;
+        }
+
+        filterNow.get().then((querySnapshot) => {
+          const products = [];
+          querySnapshot.forEach((doc) => {
+            const obj = doc.data();
+            obj.id = doc.id;
+            products.push(obj);
+            //console.log(${doc.id} => ${doc.data()});
+          });
+          renderProducts(objects);
+        });
+
+      } else {
+        productsRef.get().then((querySnapshot) => {
+          const products = [];
+          querySnapshot.forEach((doc) => {
+            const obj = doc.data();
+            obj.id = doc.id;
+            products.push(obj);
+            //console.log(${doc.id} => ${doc.data()});
+          });
+          renderProducts(products);
+        });
+      }
+    });
+  });
+}
+
+//ordenar
+
 
 
 var imagePaths = [];

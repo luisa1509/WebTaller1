@@ -329,7 +329,6 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
-  padding: 0px 60px;
   margin-right: 10px;
   z-index: 10;
 }
@@ -1271,6 +1270,28 @@ header {
   background-color: black;
 }
 
+.bodyfull--primary {
+  background-color: #51C5D1;
+}
+
+.bodyfull--secondary {
+  background-color: #F07C63;
+}
+
+.header_shop .auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  margin-right: 10px;
+  z-index: 10;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .body_shop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1421,13 +1442,34 @@ header {
 }
 
 .nav_navigation__title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-bottom: 5px solid #F07C63;
   font-size: 20px;
 }
 
-.nav_navigation__order {
+.nav_navigation__price {
   margin: auto;
+  font-weight: lighter;
+}
+
+.nav_navigation__price h4 {
+  font-weight: normal;
+}
+
+.nav_navigation__price ul li {
+  font-weight: lighter;
+}
+
+.nav_navigation__delivery {
+  margin: auto;
+  font-weight: lighter;
+}
+
+.nav_navigation__delivery h4 {
+  font-weight: normal;
+}
+
+.nav_navigation__delivery ul li {
   font-weight: lighter;
 }
 
@@ -1445,16 +1487,16 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   color: #1f2327;
 }
 
-.details .details_contain {
-  width: 60%;
+.details__contain {
+  width: 50%;
 }
 
-.details .details_contain__image {
+.details__contain__image {
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 5px;
@@ -1462,21 +1504,27 @@ header {
   margin: 20px;
 }
 
-.details .details_contain__image img {
-  width: 400px;
-}
-
-.details .details_contain__description {
-  margin: 20px;
+.details__contain__image img {
+  width: 300px;
+  margin: auto;
 }
 
 .details__info {
   margin: 20px;
+  width: 50%;
 }
 
 .details__info__title {
   color: #51C5D1;
   font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.details__info__description {
+  margin-bottom: 20px;
+}
+
+.details__info__description p {
   margin-bottom: 20px;
 }
 

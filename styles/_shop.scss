@@ -1,6 +1,32 @@
 .bodyfull{
 background-color: black;
+
+&--primary {
+  background-color:$primary_color;
 }
+
+&--secondary{
+  background-color: $secundary_color;
+}
+}
+
+
+.header_shop{
+
+  .auth{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-right: 10px;
+    z-index: 10;
+    justify-content: space-between;
+    
+    
+  }
+
+}
+
+
 .body_shop{
   display: flex;
   flex-direction: row;
@@ -126,16 +152,43 @@ background-color: black;
   padding-right: 20px;
   
   &__title{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-bottom: 5px solid $secundary_color;
     font-size: 20px;
+
   }
 
-  &__order{
+  &__price{
     margin: auto;
     font-weight: lighter;
-    
-    
 
+    h4{
+      font-weight: normal;
+    }
+
+    ul{
+
+      li{
+        font-weight: lighter;
+      }
+
+    }
+  }
+
+  &__delivery{
+    margin: auto;
+    font-weight: lighter;
+
+    h4{
+      font-weight: normal;
+    }
+
+    ul{
+
+      li{
+        font-weight: lighter;
+      }
+
+    }
   }
 }
