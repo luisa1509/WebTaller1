@@ -20,16 +20,18 @@ function renderProducts (list) {
     newProduct.classList.add('product');
 
     const url = `producto.html?${elem.id}-${elem.title}`;
-    newProduct.setAttribute('href', url);
+    //newProduct.setAttribute('href', url);
 
     newProduct.innerHTML = `
+    <a href="${url}">
     <img class="product__img" src="${elem.img}" alt="">
+    </a>
     <div class="product__info">
       <h3 class="product__title">${elem.title}</h3>
       <p class="product__price">$ ${elem.price}</p>
       <p class="product__delivery">Envío Gratis</p>
-      <button class="product__delete">Eliminar</button>
-      <button class="product__edit">Editar</button>
+      <button class="product__delete btn">Eliminar</button>
+      <button class="product__edit btn">Editar</button>
     </div>
     `;
 
@@ -37,7 +39,7 @@ function renderProducts (list) {
       elem.storageImgs.forEach(function(imageRef) {
         storageRef.child(imageRef).getDownloadURL().then(function(url) {
           // Or inserted into an <img> element:
-          var img = newProduct.querySelector('img');
+          var img = newProduct.querySelector('.product__img');
           img.src = url;
         }).catch(function(error) {
           // Handle any errors

@@ -1,3 +1,5 @@
+
+var storageRef = firebase.storage().ref();
 window.addEventListener('load', function () {
 
     console.log(location.search);
@@ -21,8 +23,16 @@ window.addEventListener('load', function () {
   
       const title = document.querySelector('h1');
       title.innerText = product.title;
+
+      storageRef.child(product.storageImgs[0]).getDownloadURL().then(function (url) {
+        // Or inserted into an <img> element:
+        var img = document.querySelector('.product_imgPrincipal');
+        img.src = url;
+    }).catch(function (error) {
+        // Handle any errors
+    });
   
-      document.querySelector('img').setAttribute('src', product.img);
+      document.querySelector('product_imgPrincipal').setAttribute('src', product.img);
       document.querySelector('p').innerText = product.description;
       document.querySelector('h2 span').innerText = product.price;
       
