@@ -1432,7 +1432,7 @@ header {
   margin-right: 20px;
 }
 
-.nav_navigation {
+.nav_order {
   margin-top: 0px;
   color: white;
   width: 20%;
@@ -1441,35 +1441,35 @@ header {
   padding-right: 20px;
 }
 
-.nav_navigation__title {
+.nav_order__title {
   margin-bottom: 40px;
   border-bottom: 5px solid #F07C63;
   font-size: 20px;
 }
 
-.nav_navigation__price {
+.nav_order__price {
   margin: auto;
   font-weight: lighter;
 }
 
-.nav_navigation__price h4 {
+.nav_order__price h4 {
   font-weight: normal;
 }
 
-.nav_navigation__price ul li {
+.nav_order__price ul li {
   font-weight: lighter;
 }
 
-.nav_navigation__delivery {
+.nav_order__delivery {
   margin: auto;
   font-weight: lighter;
 }
 
-.nav_navigation__delivery h4 {
+.nav_order__delivery h4 {
   font-weight: normal;
 }
 
-.nav_navigation__delivery ul li {
+.nav_order__delivery ul li {
   font-weight: lighter;
 }
 

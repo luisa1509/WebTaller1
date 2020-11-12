@@ -88,19 +88,20 @@ function renderProducts (list) {
   });
 }
 
+let objectsList = [];
 //leer datos
 function getProducts(){
   productsRef  // referencia de la colección
   .get() // pide todos los documentos de la colección
   .then((querySnapshot) => {
-    const objects = [];
+    const objectsList = [];
     querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
-        objects.push(obj);
+        objectsList.push(obj);
         console.log(`${doc.id} => ${doc.data()}`);
     });
-    renderProducts(objects);
+    renderProducts(objectsList);
     loader.classList.remove('loader--show');
   });
 }
@@ -111,68 +112,6 @@ getProducts();
 // render inicial con todos los productos
 renderProducts(products);
 
-const filterBtn = document.querySelector('.filterbtn');
-filterBtn.addEventListener('click', function () {
-  // función slice para tomar una sección de la lista
-  // const filtered = products.slice(1, 3);
-
-  // función filter para filtrar con una condición específica
-  const filtered = products.filter(function (elem) {
-    if(elem.price > 650000) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-
-  // render solo con los productos filtrados
-  //renderProducts(filtered);
-});
-
-//filtrar
-
-function filterProducts() {
-  filters.forEach(function (fi) {
-    fi.addEventListener('change', function () {
-      if (fi.checked) {
-        var filterNow;
-        switch (fi.computer) {
-          case 'computer':
-            filterNow = productsRef.where('category', "==", "computer");
-        break;
-          case 'tablet':
-            filterNow = productsRef.where('category', "==", "tablet");
-            break;
-        }
-
-        filterNow.get().then((querySnapshot) => {
-          const products = [];
-          querySnapshot.forEach((doc) => {
-            const obj = doc.data();
-            obj.id = doc.id;
-            products.push(obj);
-            //console.log(${doc.id} => ${doc.data()});
-          });
-          renderProducts(objects);
-        });
-
-      } else {
-        productsRef.get().then((querySnapshot) => {
-          const products = [];
-          querySnapshot.forEach((doc) => {
-            const obj = doc.data();
-            obj.id = doc.id;
-            products.push(obj);
-            //console.log(${doc.id} => ${doc.data()});
-          });
-          renderProducts(products);
-        });
-      }
-    });
-  });
-}
-
-//ordenar
 
 
 
@@ -196,50 +135,46 @@ form.addEventListener('submit', function (event) {
   };
 
 loader.classList.add('loader--show');
+
+function handleThen (docRef) {
+  getProducts(products);
+  renderProducts(products);
+  form.title.value = '';
+  //form.img.value = '';
+  form.price.value = '';
+  form.delivery.checked = '';
+  form.category.value = '';
+  form.description.value = '';
+  selectedElemId = null;
+
+}
+function handleCatch (error) {
+  console.error("Error adding document: ", error);
+}
+
+
+
 //si existen selectedElemId quiere decir que va a editar
 if(selectedElem){
   productsRef
   .doc(selectedElem)//seleccione el producto con ese id
   .set(newProduct)//sobreescriba la info existente
-  .then(function(docRef) {
+  .then(handleThen) 
+  .catch(handleCatch);
     //console.log("Document written with ID: ", docRef.id);
     
-    getProducts(products);
-    renderProducts(products);
-    form.title.value = '';
-    //form.img.value = '';
-    form.price.value = '';
-    form.delivery.checked = '';
-    form.category.value = '';
-    form.description.value = '';
-    selectedElemId = null;
-
-  })
-  .catch(function(error) {
-    console.error("Error adding document: ", error);
-});
 
 }else{
   //si no existe es porque es un nuevo producto
   productsRef // referencia de la colección
 .add(newProduct) // cree un nuevo elemento en la colección
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
+.then(handleThen) 
+.catch(handleCatch);
+}
 });
 
   
-  products.push(newProduct);
 
-  renderProducts(products);
-  getProducts(products)
-}
-
-
-
-});
 
 //storage
 
@@ -288,5 +223,28 @@ fileMulti.addEventListener('change', function() {
 });
 
 
+//filtros
 
+
+
+//ordenamientos
+const orderAside = document.querySelector('.nav_order');
+orderAside.addEventListener('input', function() {
+
+  let copy = objectsList.slice();
+
+  const order = orderAside.order.value;
+  switch(order){
+    case 'price_asc':
+      copy.sort(function(a, b){
+        return a.price - b.price;
+      });
+      break;
+    case 'price_desc':
+      copy.sort(function(a, b){
+        return b.price - a.price;
+      });
+      break;
+  }
+});
 

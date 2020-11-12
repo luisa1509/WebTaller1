@@ -18,9 +18,9 @@
             <div class="auth__without hidden">
                 <a href="/iniciar-sesion.html">Iniciar sesión</a>
                 <a href="/register.html">Registrarse</a>
-    
+
             </div>
-    
+
             <div class="auth__with hidden">
                 <a href="/perfil.html" class="auth__profile">
                     <img src="" alt="">
@@ -29,9 +29,9 @@
                 <a href="#" class="auth__signout">
                     Cerrar sesión
                 </a>
-    
+
             </div>
-    
+
         </div>
 
         <div class="nav_menu">
@@ -40,22 +40,30 @@
         </div>
 
 
-    
+
 
     </div>
 
-    
+
 </header>
 
-<body class="bodyfull">
+<body class="bodyfull--primary">
 
     <div class="body_shop">
 
         <p class="loader">Cargando...</p>
 
-        <aside class="nav_navigation">
-            <h3 class="nav_navigation__title">Ordenar publicaciones</h3>
-            <div class="nav_navigation__price">
+        <aside class="nav_order">
+            <label>
+                Ordenar por:
+                <select name="order">
+                  <option value="">Selecciona una opción</option>
+                  <option value="price_asc">Precio menor a mayor</option>
+                  <option value="price_desc">Precio mayor a menor</option>
+                </select>
+              </label>
+            <h3 class="nav_order__title">Ordenar publicaciones</h3>
+            <div class="nav_order__price">
                 <h4>Precio</h4>
                 <ul>
                     <li>600.000 a 900.000</li>
@@ -65,7 +73,7 @@
                 </ul>
             </div>
 
-            <div class="nav_navigation__delivery">
+            <div class="nav_order__delivery">
                 <h4>Envío</h4>
                 <ul>
                     <li>Envío gratis</li>
@@ -77,14 +85,32 @@
 
         <div class="shop_filter">
 
-
-
-
             <section class="nav_filter">
-                <button class="filterbtn btn">Computadores</button>
-                <button class="filterbtn btn">Monitores</button>
-                <button class="filterbtn btn">Lapices</button>
-                <button class="filterbtn btn">Tablets</button>
+                <label>
+                <input type="radio" name="name" value="" checked>
+                Todos
+                </label>
+                <label>
+                    <input type="radio" name="name" value="computer">
+                    Computadores
+                </label>
+                <label>
+                    <input type="radio" name="name" value="monitor">
+                    Monitores
+                </label>
+                <label>
+                    <input type="radio" name="name" value="pencil">
+                    Lapices
+                </label>
+                <label>
+                    <input type="radio" name="name" value="tablet">
+                    Tablets
+                </label>
+                <label>
+                    <input type="radio" name="name" value="deliveryfree">
+                    Envío gratis
+                </label>
+
             </section>
 
             <article class="productslist">
@@ -147,16 +173,16 @@
 
         <div class="form__imginput">
             <img src="" alt="" height="200px">
-            <input type="file" >
-          </div>
-          <div class="form__imginput">
+            <input type="file">
+        </div>
+        <div class="form__imginput">
             <img src="" alt="" height="200px">
-            <input type="file" >
-          </div>
-          <div class="form__imginput">
+            <input type="file">
+        </div>
+        <div class="form__imginput">
             <img src="" alt="" height="200px">
-            <input type="file" >
-          </div>
+            <input type="file">
+        </div>
 
 
 
