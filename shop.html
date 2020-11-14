@@ -54,38 +54,24 @@
         <p class="loader">Cargando...</p>
 
         <aside class="nav_order">
-            <label>
-                Ordenar por:
-                <select name="order">
-                  <option value="">Selecciona una opción</option>
-                  <option value="price_asc">Precio menor a mayor</option>
-                  <option value="price_desc">Precio mayor a menor</option>
-                </select>
-              </label>
-            <h3 class="nav_order__title">Ordenar publicaciones</h3>
-            <div class="nav_order__price">
-                <h4>Precio</h4>
-                <ul>
-                    <li>600.000 a 900.000</li>
-                    <li>900.000 a 1´200.000</li>
-                    <li>1´200.000 a 1´500.000</li>
-                    <li>1´500.000 a 1´800.000</li>
-                </ul>
-            </div>
-
-            <div class="nav_order__delivery">
-                <h4>Envío</h4>
-                <ul>
-                    <li>Envío gratis</li>
-                    <li>Cobro por envío</li>
-                </ul>
-            </div>
+            <form class="orderform">
+                <label>
+                  Ordenar por:                 
+                  <select name="orderprice">
+                    <option value="">Selecciona una opción</option>
+                    <option value="price_asc">Precio menor a mayor</option>
+                    <option value="price_desc">Precio mayor a menor</option>
+                    <option value="sortAlphabetA">A-Z</option>
+                    <option value="sortAlphabetZ">Z-A</option>
+                  </select>
+                </label>
+            </form>
 
         </aside>
 
         <div class="shop_filter">
 
-            <section class="nav_filter">
+            <form class="filterform">
                 <label>
                 <input type="radio" name="name" value="" checked>
                 Todos
@@ -111,7 +97,7 @@
                     Envío gratis
                 </label>
 
-            </section>
+            </form>
 
             <article class="productslist">
 

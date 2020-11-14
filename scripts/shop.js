@@ -94,7 +94,7 @@ function getProducts(){
   productsRef  // referencia de la colección
   .get() // pide todos los documentos de la colección
   .then((querySnapshot) => {
-    const objectsList = [];
+    objectsList = [];
     querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
@@ -228,13 +228,17 @@ fileMulti.addEventListener('change', function() {
 
 
 //ordenamientos
-const orderAside = document.querySelector('.nav_order');
-orderAside.addEventListener('input', function() {
+//el name funciona cuando esta dentro de un form
+const orderform = document.querySelector('.orderform');
+orderform.addEventListener('change', function() {
 
   let copy = objectsList.slice();
 
-  const order = orderAside.order.value;
-  switch(order){
+  const orderprice = orderform.orderprice.value;
+
+  console.log(orderprice);
+
+  switch(orderprice){
     case 'price_asc':
       copy.sort(function(a, b){
         return a.price - b.price;
@@ -245,6 +249,50 @@ orderAside.addEventListener('input', function() {
         return b.price - a.price;
       });
       break;
+
+      case 'sortAlphabetA':
+        copy.sort(function (a, b) {
+          return a.title.localeCompare(b.title);
+        });
+        break;
+  
+      case 'sortAlphabetZ':
+        copy.sort(function (a, b) {
+          return b.title.localeCompare(a.title);
+        });
+        break;
+  
+    
   }
+
+  renderProducts(copy);
 });
+
+//filtros
+    const filterform = document.querySelector('.filterform');
+    filterform.addEventListener('change', function() {
+
+      let copy = objectsList.slice();
+      const namefilter = filterform.name.value;
+      console.log(namefilter);
+     
+        if(namefilter != '') {
+          copy = copy.filter(function(elem){
+            if(elem.category.toLowerCase().includes(namefilter)) {
+              return true;
+            }
+            return false;
+          });
+        }
+
+   
+        renderProducts(copy);
+    
+    });
+   
+    
+
+
+
+
 
