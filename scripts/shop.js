@@ -30,7 +30,7 @@ function renderProducts (list) {
 
     newProduct.innerHTML = `
     <a href="${url}">
-    <img class="product__img" src="${elem.img}" alt="">
+    <img class="product__img" src="" alt="">
     </a>
     <div class="product__info">
       <h3 class="product__title">${elem.title}</h3>
@@ -42,32 +42,32 @@ function renderProducts (list) {
     </div>
     `;
 
-    //carrito
+    //carrito coleccion 
 
-  const cartBtn = newProduct.querySelector(".cartBtn");
+  const cartBtn = newProduct.querySelector('.cartBtn');
 
-  function cartList(productsListCartShop){
-    console.log(productsListCartShop);
-    let productsArray = productsListCartShop;
+  function cartList(ListCartShop){
+    
+    console.log(ListCartShop);
+    let productShopArray = ListCartShop;
     if(userInfo){
       const cartShop = {
         title: elem.title,
-        price: number(elem.price),
+        price: Number(elem.price),
         img: elem.storageImgs[0],
-        description: elem.description,
       };
 
-      productsArray.push(cartShop); 
+      productShopArray.push(cartShop); 
 
       productsCartList = {
-        products: productsArray
+        products: productShopArray
       }
 
     cartRef.doc(userInfo.uid).set(productsCartList).catch(function(error){
       console.log(error);
     });
 
-    console.log(productsArray)
+    console.log(productShopArray)
     }
   }
 
@@ -77,13 +77,19 @@ function renderProducts (list) {
     .get()
     .then((doc) => {
       if (doc.exists) {
-        productsAddCartShop = doc.data().products;
-        console.log(productsAddCart);
+        AddCartShop = doc.data().products;
+        console.log(AddCartShop);
         productsCartList = doc.data().products;
-        cartList(productsAddCartShop);
+        cartList(AddCartShop);
+      }else if(doc.exists && doc.data().products == undefined){
+        cartList(AddCartShop);
+      }else if(!doc.exists){
+        cartList(AddCartShop);
+
       }
+      
     }).catch(function (error) {
-      console.log("erroooooor ", error);
+      console.log("error en el carrito", error);
     });
   }
  
@@ -96,6 +102,7 @@ function renderProducts (list) {
     }
    
    console.log("holi");
+
   });
 
 
@@ -147,6 +154,7 @@ function renderProducts (list) {
       form.delivery.checked = elem.delivery;
       form.category.value = elem.category;
       form.description.value = elem.description;
+      form.img = elem.storageImgs[0];
       selectedElem = elem.id;
     });
 
@@ -192,7 +200,6 @@ form.addEventListener('submit', function (event) {
   
   const newProduct = {
     title: form.title.value,
-    img: form.image.value,
     price: form.price.value,
     category: form.category.value,
     delivery: form.delivery.checked,
@@ -271,22 +278,6 @@ images.forEach(function(group, index) {
 });
 
 
-// input file multiple
-const fileMulti = document.querySelector('.filemulti');
-fileMulti.addEventListener('change', function() {
-
-  Array.from(fileMulti.files).forEach(function(file, index) {
-
-    console.log(file);
-    var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*999999999)}.jpg`);
-
-    newImageRef.put(file).then(function(snapshot) {
-      console.log(snapshot)
-      console.log('Uploaded a blob or file!');
-      imagePaths[index] = snapshot.metadata.fullPath;
-    });
-  })
-});
 
 
 //filtros
