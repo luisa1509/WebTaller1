@@ -16,6 +16,8 @@ firebase.auth().onAuthStateChanged(function(user) {
       if(doc.exists) {
         const data = doc.data();
         authProfileSpan.innerText = data.name;
+        userInfo=data;
+        userInfo.uid=user.uid;
       }
     });
   } else {

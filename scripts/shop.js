@@ -2,6 +2,7 @@
 
 const db = firebase.firestore();
 const productsRef = db.collection('products');
+const cartRef = db.collection('cart');
 const loader = document.querySelector('.loader');
 let selectedElem = null;
 
@@ -10,6 +11,11 @@ var storageRef = firebase.storage().ref();
 const products = [];
 
 const productsList = document.querySelector('.productslist');
+
+
+
+let productsAddCartShop= [];
+
 
 
 // creación de nuevos productos a partir de la lista
@@ -32,8 +38,68 @@ function renderProducts (list) {
       <p class="product__delivery">Envío Gratis</p>
       <button class="product__delete btn">Eliminar</button>
       <button class="product__edit btn">Editar</button>
+      <button class="cartBtn btn">Comprar</button>
     </div>
     `;
+
+    //carrito
+
+  const cartBtn = newProduct.querySelector(".cartBtn");
+
+  function cartList(productsListCartShop){
+    console.log(productsListCartShop);
+    let productsArray = productsListCartShop;
+    if(userInfo){
+      const cartShop = {
+        title: elem.title,
+        price: number(elem.price),
+        img: elem.storageImgs[0],
+        description: elem.description,
+      };
+
+      productsArray.push(cartShop); 
+
+      productsCartList = {
+        products: productsArray
+      }
+
+    cartRef.doc(userInfo.uid).set(productsCartList).catch(function(error){
+      console.log(error);
+    });
+
+    console.log(productsArray)
+    }
+  }
+
+  function getCart() {
+    cartRef
+    .doc(userInfo.uid)
+    .get()
+    .then((doc) => {
+      if (doc.exists) {
+        productsAddCartShop = doc.data().products;
+        console.log(productsAddCart);
+        productsCartList = doc.data().products;
+        cartList(productsAddCartShop);
+      }
+    }).catch(function (error) {
+      console.log("erroooooor ", error);
+    });
+  }
+ 
+  cartBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    if(userInfo) {
+      getCart();
+
+    }
+   
+   console.log("holi");
+  });
+
+
+
 
     if(elem.storageImgs) {
       elem.storageImgs.forEach(function(imageRef) {
@@ -292,7 +358,11 @@ orderform.addEventListener('change', function() {
    
     
 
-
+    
+     
+  
+    
+  
 
 
 
