@@ -5,7 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <header class="header_shop">
+        <div class="content_nav">
+            <img src="./img/image 2.png" alt="logo" height="100" width="200">
+    
+            <div class="auth">
+                <div class="auth__without hidden">
+                    <a href="/iniciar-sesion.html">Iniciar sesión</a>
+                    <a href="/register.html">Registrarse</a>
+    
+                </div>
+    
+                <div class="auth__with hidden">
+                    <a href="/perfil.html" class="auth__profile">
+                        <img src="" alt="">
+                        <span>Luisa</span>
+                    </a>
+                    <a href="#" class="auth__signout">
+                        Cerrar sesión
+                    </a>
+    
+                </div>
+    
+            </div>
+    
+            <div class="nav_menu">
+                <a href="register.html"><img src="./imgShop/login.png"></a>
+                <a href="carrito.html"><img src="./imgShop/shopping.png"></a>
+            </div>
+    
+    
+    
+    
+        </div>
+    
+    
+    </header>
+
+    <section class="cartProducts">
+
+    </section>
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/cartshop.js"></script>
+
     
 </body>
 </html>

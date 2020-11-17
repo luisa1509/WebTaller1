@@ -18,7 +18,12 @@ firebase.auth().onAuthStateChanged(function(user) {
         authProfileSpan.innerText = data.name;
         userInfo=data;
         userInfo.uid=user.uid;
+        if(window.getProductsCart){
+          getProductsCart();
+        }
       }
+
+    
     });
   } else {
     // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión

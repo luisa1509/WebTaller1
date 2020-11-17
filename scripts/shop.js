@@ -72,6 +72,7 @@ function renderProducts (list) {
   }
 
   function getCart() {
+    
     cartRef
     .doc(userInfo.uid)
     .get()
