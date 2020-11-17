@@ -14,7 +14,7 @@ const productsList = document.querySelector('.productslist');
 
 
 
-let productsAddCartShop= [];
+let AddCartShop= [];
 
 
 
