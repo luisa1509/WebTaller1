@@ -25,7 +25,7 @@ function renderProducts (list) {
     const newProduct = document.createElement('a');
     newProduct.classList.add('product');
 
-    const url = `producto.html?${elem.id}-${elem.title}`;
+    const url = `./producto.html?${elem.id}-${elem.title}`;
     //newProduct.setAttribute('href', url);
 
     newProduct.innerHTML = `
