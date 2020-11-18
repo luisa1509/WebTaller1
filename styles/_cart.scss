@@ -2,7 +2,14 @@
     margin-top: 150px;
 }
 
+.titleshop{
+    color: white;
+    margin-left: 50px;
+}
+
 .productCart{
+    width: 50%;
+    margin: auto; 
     
     margin-top: 50px;
     border: 1px solid gray;
@@ -33,8 +40,24 @@
         margin-top: 0px;
     }
     &__price {
+        font-size: 30px;
     
     }
+}
+
+
+@media (max-width: 600px){
+
+    .fixedbody{
+        margin-top: 80px;
+    }
+    .productCart{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+
+    }
+
 }
 
 

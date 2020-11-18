@@ -4,6 +4,7 @@ const db = firebase.firestore();
 const productsRef = db.collection('products');
 const cartRef = db.collection('cart');
 const loader = document.querySelector('.loader');
+const storage = window.localStorage;
 let selectedElem = null;
 
 var storageRef = firebase.storage().ref();
@@ -35,12 +36,17 @@ function renderProducts (list) {
     <div class="product__info">
       <h3 class="product__title">${elem.title}</h3>
       <p class="product__price">$ ${elem.price}</p>
-      <p class="product__delivery">Envío Gratis</p>
+      <p class="product__delivery hidden">Envío Gratis</p>
       <button class="product__delete btn">Eliminar</button>
+     
       <button class="product__edit btn">Editar</button>
+    
       <button class="cartBtn btn">Comprar</button>
     </div>
     `;
+
+
+
 
     //carrito coleccion 
 
@@ -121,12 +127,7 @@ function renderProducts (list) {
       })
     }
 
-  //envio
-  const deliveryFree = newProduct.querySelector('.product__delivery');
-  
-  if(form.delivery.checked){
-    loader.classList.add('.product__delivery');
-  }
+
     
     // seleccionamos el botón "Eliminar" que se acaba de crear en este elemento
     const deleteBtn = newProduct.querySelector('.product__delete');
@@ -146,9 +147,22 @@ function renderProducts (list) {
       });
     });
 
+
+ 
+    
     // seleccionar el botón de editar
     // al hacer click al botón de editar
     const editBtn = newProduct.querySelector('.product__edit');
+           //Editar
+        
+           editBtn.addEventListener('click', function () {
+    
+            
+            console.log(elem.id);
+            storage.setItem("selectItemstorage", elem.id);
+            window.location.href = "./editar-producto.html";
+    
+        });
     editBtn.addEventListener('click', function() {
       form.title.value = elem.title;
       form.price.value = elem.price;
@@ -161,6 +175,9 @@ function renderProducts (list) {
 
     productsList.appendChild(newProduct);
   });
+
+
+  
 }
 
 let objectsList = [];
@@ -227,6 +244,14 @@ function handleCatch (error) {
 }
 
 
+
+  //envio
+
+  //const deliveryFree = newProduct.querySelector('.product__delivery');
+  
+  //if(form.deliveryFree.checked===true){
+    //form.querySelector('.product__delivery').classList.remove('hidden');
+  //}
 
 //si existen selectedElemId quiere decir que va a editar
 if(selectedElem){
@@ -343,11 +368,18 @@ orderform.addEventListener('change', function() {
           });
         }
 
+
    
         renderProducts(copy);
     
     });
-   
+
+
+
+
+
+
+
     
 
     

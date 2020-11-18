@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <title>Document</title>
 
     <link rel="stylesheet" href="styles/main.css">
@@ -23,8 +23,8 @@
             </div>
 
             <div class="auth__with hidden">
-                <a href="/perfil.html" class="auth__profile">
-                    <img src="" alt="">
+                <a href="" class="auth__profile">
+                    
                     <span>Luisa</span>
                 </a>
                 <a href="#" class="auth__signout">
@@ -34,7 +34,8 @@
             </div>
 
             <div class="nav_menu">
-                <a href="./carrito.html"><img src="./imgShop/shopping.png"></a>
+                <a class="addproductlink" href="./agregar-producto.html">Agregar Producto</a>
+                <a class="nav_menu__img" href="./carrito.html"><img src="./imgShop/shopping.png"></a>
                 <p class="cantidad">0</p>
                 
                 
@@ -57,6 +58,8 @@
     <div class="body_shop">
 
         <p class="loader">Cargando...</p>
+
+        
 
         <aside class="nav_order">
             <form class="orderform">
@@ -97,29 +100,31 @@
                     <input type="radio" name="name" value="tablet">
                     Tablets
                 </label>
-                <label>
-                    <input type="radio" name="name" value="deliveryfree">
-                    Envío gratis
-                </label>
+        
 
             </form>
 
-            <article class="productslist">
 
-
-                <img class="productslist__img" src="">
-                <div class="productslist__info">
-                    <h3 class="productslist__price"></h3>
-                    <h3 class="productslist__title">Titulo</h3>
-                    <p class="productslist__mail"></p>
-                </div>
-
-            </article>
         </div>
     </div>
 
 
-    <form class="form">
+    <article class="productslist">
+
+
+        <img class="productslist__img" src="">
+        <div class="productslist__info">
+            <h3 class="productslist__price"></h3>
+            <h3 class="productslist__title">Titulo</h3>
+            <p class="productslist__mail"></p>
+        </div>
+
+        
+
+    </article>
+
+
+    <form class="form addProduct">
         <h2 class="form__title">Nuevo producto</h2>
 
         <label class="form__label">
@@ -172,7 +177,7 @@
 
 
 
-        <button class="btn">
+        <button class="btn productSave">
             Guardar
         </button>
     </form>

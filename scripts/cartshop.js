@@ -59,6 +59,8 @@ function getProductsCart() {
 
 
     renderProductsCarts(productsCartShopArray);
+
+    //cantidad de productos
     cantidadProducts.innerHTML=productsCartShopArray.length+"";
 
   });

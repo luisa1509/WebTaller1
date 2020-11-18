@@ -19,6 +19,12 @@
   
     &--secondary {
       @include btnModifier($secundary-color);
+      font-family: $font;
+      font-weight: normal;
+      font-size: 20px;
+      padding: 5px 5px;
+      border-radius: 5px;
+      border: 0;
     }
   
     &--success {

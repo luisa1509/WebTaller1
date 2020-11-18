@@ -268,6 +268,12 @@ input[type=button] {
 .btn--secondary {
   background-color: #F07C63;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 0;
 }
 
 .btn--secondary:hover {
@@ -336,7 +342,6 @@ header {
 .nav_menu img {
   width: 30px;
   height: 30px;
-  margin: 20px;
 }
 
 .nav_wrapperr {
@@ -1278,6 +1283,14 @@ header {
   background-color: #F07C63;
 }
 
+.formbody {
+  margin-top: 150px;
+}
+
+.bodyProduct {
+  margin-top: 150px;
+}
+
 .header_shop .auth {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1290,6 +1303,18 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header_shop .auth__without a {
+  margin-right: 20px;
+}
+
+.header_shop .auth__with a {
+  margin-right: 20px;
+}
+
+.header_shop .auth .addproductlink {
+  margin-right: 20px;
 }
 
 .body_shop {
@@ -1412,6 +1437,11 @@ header {
   font-weight: lighter;
 }
 
+.form__save {
+  color: green;
+  font-weight: lighter;
+}
+
 .loader {
   display: none;
 }
@@ -1471,6 +1501,61 @@ header {
 
 .nav_order__delivery ul li {
   font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+  .body_shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-top: 120px;
+  }
+  .productlist {
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 50px;
+    width: 100%;
+  }
+  .product {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .nav_menu__img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+  .auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    z-index: 10;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .auth__without a {
+    margin-right: 5px;
+  }
+  .auth__with a {
+    margin-right: 5px;
+  }
+  .auth .addproductlink {
+    margin-right: 5px;
+  }
+  .formbody {
+    margin-top: 100px;
+  }
 }
 
 .details {
@@ -1539,11 +1624,77 @@ header {
   font-weight: lighter;
 }
 
+@media (max-width: 600px) {
+  .details {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #1f2327;
+  }
+  .details__contain {
+    width: 80%;
+  }
+  .details__contain__image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 20px;
+  }
+  .details__contain__image img {
+    width: 600px;
+    margin: auto;
+  }
+  .details__info {
+    margin: 20px;
+    width: 100%;
+  }
+  .details__info__title {
+    color: #51C5D1;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .details__info__description {
+    margin-bottom: 20px;
+  }
+  .details__info__description p {
+    margin-bottom: 20px;
+  }
+  .details__info h2 {
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
+  .details__info h2__price {
+    font-size: 48px;
+    font-weight: lighter;
+  }
+}
+
 .fixedbody {
   margin-top: 150px;
 }
 
+.titleshop {
+  color: white;
+  margin-left: 50px;
+}
+
 .productCart {
+  width: 50%;
+  margin: auto;
   margin-top: 50px;
   border: 1px solid gray;
   padding: 10px 0px;
@@ -1578,5 +1729,20 @@ header {
 
 .productCart__title {
   margin-top: 0px;
+}
+
+.productCart__price {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .fixedbody {
+    margin-top: 80px;
+  }
+  .productCart {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
