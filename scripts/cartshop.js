@@ -5,6 +5,7 @@ const cartRef = db.collection('cart');
 let storageRef = firebase.storage().ref();
 const cartproductsList = document.querySelector('.cartProducts');
 const cantidadProducts = document.querySelector('.cantidad');
+const totalProducts = document.querySelector('.bagProductstotal_price');
 const productsTotalBag = document.querySelector('.productsTotalBag');
 
 // creación de nuevos productos a partir de la lista
@@ -58,11 +59,41 @@ function getProductsCart() {
       });
     }
 
+    if(doc.exists){
+
+      let value = doc.data().products.reduce(function(pastValue, newValue){
+          return{
+              price:pastValue.price+newValue.price,
+          }
+      });
+
+      document.querySelector('.bagProductstotal_price').innerHTML= value.price;
+  }
+
 
     renderProductsCarts(productsCartShopArray);
     cantidadProducts.innerHTML=productsCartShopArray.length+"";
+    //totalProducts.innerHTML=productsCartShopArray.length+"";
+    
 
   });
+
+  const quantityP = document.querySelector('.bagProductstotal_price');
+
+   function getQuantityProducts(){
+
+
+    cartRef.doc(userInfo.uid).get().then((doc) => {
+       
+        if (doc.exists) {
+            quantityP.innerText = doc.data().products.length;
+        }
+
+
+  
+    });
+  }
+   
   
 }
 

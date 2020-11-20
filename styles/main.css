@@ -1305,11 +1305,33 @@ header {
           justify-content: space-between;
 }
 
+.header_shop .auth__without img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
 .header_shop .auth__without a {
   margin-right: 20px;
 }
 
+.header_shop .auth__with img {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
 .header_shop .auth__with a {
+  margin-right: 20px;
+}
+
+.header_shop .auth__with__signout img {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.header_shop .auth__with__signout a {
   margin-right: 20px;
 }
 
@@ -1528,9 +1550,8 @@ header {
     margin-top: 20px;
   }
   .nav_menu__img {
-    width: 50px;
-    height: 50px;
-    margin: auto;
+    width: 30px;
+    height: 20px;
   }
   .auth {
     display: -webkit-box;
@@ -1544,14 +1565,29 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .auth__without img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
   .auth__without a {
     margin-right: 5px;
+  }
+  .auth__with img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
   }
   .auth__with a {
     margin-right: 5px;
   }
   .auth .addproductlink {
     margin-right: 5px;
+  }
+  .auth .addproductlink img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
   }
   .formbody {
     margin-top: 100px;
