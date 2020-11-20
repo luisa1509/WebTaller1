@@ -1,7 +1,7 @@
 
 
 var storageRef = firebase.storage().ref();
-
+//const cartBtn = newProduct.querySelector('.cart_add');
 
 window.addEventListener('load', function () {
 

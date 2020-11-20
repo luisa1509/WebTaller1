@@ -115,7 +115,7 @@ function renderProducts(list) {
     });
 
 
-
+/*
 
     if (elem.storageImgs) {
       elem.storageImgs.forEach(function (imageRef) {
@@ -129,7 +129,7 @@ function renderProducts(list) {
       })
     }
 
-
+*/
 
     // seleccionamos el botón "Eliminar" que se acaba de crear en este elemento
     const deleteBtn = newProduct.querySelector('.product__delete');
