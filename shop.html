@@ -23,18 +23,20 @@
             </div>
 
             <div class="auth__with hidden">
-                <a href="" class="auth__profile">
+                <a href="./perfil.html" class="auth__profile">
                     
                     <span>Luisa</span>
                 </a>
                 <a href="#" class="auth__signout">
-                    Cerrar sesión
+                    <img src="./imgShop/logout.png" >
                 </a>
 
             </div>
 
             <div class="nav_menu">
-                <a class="addproductlink" href="./agregar-producto.html">Agregar Producto</a>
+                <a class="addproductlink" href="./agregar-producto.html">
+                    <img src="./imgShop/add.png" >
+                </a>
                 <a class="nav_menu__img" href="./carrito.html"><img src="./imgShop/shopping.png"></a>
                 <p class="cantidad">0</p>
                 
@@ -124,65 +126,7 @@
     </article>
 
 
-    <form class="form addProduct">
-        <h2 class="form__title">Nuevo producto</h2>
-
-        <label class="form__label">
-            Título
-            <input name="title" type="text">
-        </label>
-
-        <label class="form__label">
-            Categoría
-
-            <select name="category">
-                <option value="computer">Computadores</option>
-                <option value="monitor">Monitores</option>
-                <option value="pencil">Lapices</option>
-                <option value="tablet">Tablets</option>
-
-            </select>
-
-        </label>
-
-
-        <label class="form__label">
-            Precio
-            <input name="price" type="number">
-        </label>
-
-        <label class="form__label">
-
-            <input name="delivery" type="checkbox" />
-            Envio Gratis
-        </label>
-
-        <label class="form__label">
-            Descripción
-            <input name="description" type="text">
-        </label>
-
-        <div class="form__imginput">
-            <img src="" alt="" height="200px">
-            <input type="file">
-        </div>
-        <div class="form__imginput">
-            <img src="" alt="" height="200px">
-            <input type="file">
-        </div>
-        <div class="form__imginput">
-            <img src="" alt="" height="200px">
-            <input type="file">
-        </div>
-
-
-
-        <button class="btn productSave">
-            Guardar
-        </button>
-    </form>
-
-
+ 
 
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>

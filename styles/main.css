@@ -1692,10 +1692,18 @@ header {
   margin-left: 50px;
 }
 
+.cartProducts {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .productCart {
   width: 50%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   border: 1px solid gray;
   padding: 10px 0px;
   display: -webkit-box;
@@ -1735,6 +1743,15 @@ header {
   font-size: 30px;
 }
 
+.bagProducts {
+  background-color: white;
+  margin-top: 100px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 @media (max-width: 600px) {
   .fixedbody {
     margin-top: 80px;
@@ -1743,6 +1760,9 @@ header {
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
+  }
+  .productCart .productsTotalBag {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

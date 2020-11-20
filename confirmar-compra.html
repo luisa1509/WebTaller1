@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<header class="header_shop">
+    <div class="content_nav">
+        <img src="./img/image 2.png" alt="logo" height="100" width="200">
+  
+  
+        <div class="auth">
+            <div class="auth__without hidden">
+                <a href="./iniciar-sesion.html">Iniciar sesión</a>
+                <a href="./register.html">Registrarse</a>
+  
+            </div>
+  
+            <div class="auth__with hidden">
+                <a href="" class="auth__profile">
+                    
+                    <span>Luisa</span>
+                </a>
+                <a href="#" class="auth__signout">
+                    Cerrar sesión
+                </a>
+  
+            </div>
+  
+            <div class="nav_menu">
+                <a class="addproductlink" href="./agregar-producto.html">Agregar Producto</a>
+                <a class="nav_menu__img" href="./carrito.html"><img src="./imgShop/shopping.png"></a>
+                <h6 class="cantidad">0</h6>
+                
+                
+            </div>
+    
+  
+        </div>
+  
+        
+  
+  
+  
+    </div>
+  
+  
+  </header>
+
+
+<body class="formbody bodyfull--secondary">
+
+
+    <form class="form checkout">
+        <h2 class="form__title">Confirma tu compra</h2>
+
+        <label class="form__label">
+            Nombre completo
+            <input name="fullname" type="text">
+        </label>
+
+        <label class="form__label">
+            Direccion
+            <input name="address" type="text">
+        </label>
+
+        <label class="form__label">
+            Seleccione tipo de tarjeta
+        <select class="selectCard" name="card" id="">
+            <option selected="selected" value="predefined">Seleccione la tarjeta</option>
+            <option value="creditCard">Crédito</option>
+            <option value="debitCard">Débito</option>
+        </select>
+        </label>
+
+        <label class="form__label">
+            Numero de tarjeta de credito
+            <input name="card" type="number">
+        </label>
+
+
+        <button class="btn productBagConfirm">
+            Gonfirmar
+        </button>
+
+
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="./scripts/firebase.js"></script>
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/checkout.js"></script>
+
+    
+</body>
+</html>

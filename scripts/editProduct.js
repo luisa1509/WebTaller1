@@ -1,11 +1,13 @@
+
+
 const db = firebase.firestore();
 const productsRef = db.collection('products');
 const storage = window.localStorage;
 const selectItemstorage = storage.getItem("selectItemstorage");
 var storageRef = firebase.storage().ref();
-let selectItem = null;
-selectItem = selectItemstorage;
-console.log(selectItem);
+let selectElem = null;
+selectElem = selectItemstorage;
+console.log(selectElem);
 console.log(selectItemstorage);
 var imagePaths = [];
 const changeBtn = document.querySelector('.productChange');
@@ -17,7 +19,8 @@ const form = document.querySelector('.editProduct');
 console.log(form);
 
 
-productsRef.doc(selectItem).get().then(function(doc) {
+
+productsRef.doc(selectElem).get().then(function(doc) {
 
     if (doc.exists) {
         elem = doc.data();
@@ -41,9 +44,9 @@ productsRef.doc(selectItem).get().then(function(doc) {
 //storage
 const images = form.querySelectorAll('.form__imginput');
 
-images.forEach(function(input, index){
-    const input = group.querySelector('input');
-    const img = group.querySelector('img');
+images.forEach(function(btnimg, index){
+    const input = form.querySelector('input');
+    const img = form.querySelector('img');
     
     input.addEventListener('change', function(){
         console.log("holis");
@@ -58,6 +61,7 @@ images.forEach(function(input, index){
         });
       });
 });
+
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -89,9 +93,9 @@ form.addEventListener('submit', function (event) {
 
 
     //si existen selectItem quiere decir que va a editar
-if(selectItem){
+if(selectElem){
   productsRef
-  .doc(selectItem)//seleccione el producto con ese id
+  .doc(selectElem)//seleccione el producto con ese id
   .set(editProduct)//sobreescriba la info existente
   .then(handleThen) 
   .catch(handleCatch);
@@ -112,5 +116,5 @@ changeBtn.addEventListener("click", function () {
 
 backBtn.addEventListener("click", function () {
   
-    window.location.href = "./shop.html";
+    window.location.href = "shop.html";
 });

@@ -84,6 +84,7 @@ images.forEach(function(group, index) {
 
 saveBtn.addEventListener("click", function () {
     form.querySelector('.form__save').classList.remove('hidden');
+ 
 
     
 });

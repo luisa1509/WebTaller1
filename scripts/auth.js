@@ -4,6 +4,8 @@ const authWithout = auth.querySelector('.auth__without');
 const authProfileSpan = auth.querySelector('.auth__profile span');
 const authSignout = auth.querySelector('.auth__signout');
 
+let userInfo; 
+
 firebase.auth().onAuthStateChanged(function(user) {
   if(user) {
     // si el usuario existe quiere decir que inició sesión, se registró o ya tenía sesión iniciada
@@ -18,9 +20,41 @@ firebase.auth().onAuthStateChanged(function(user) {
         authProfileSpan.innerText = data.name;
         userInfo=data;
         userInfo.uid=user.uid;
+
+        
         if(window.getProductsCart){
           getProductsCart();
         }
+
+        if(window.getBag){
+          getBag();
+        }
+
+
+        
+          const btnedit = document.querySelectorAll('.product__edit');
+          const btndelete = document.querySelectorAll('.product__delete');
+          console.log(btnedit);
+          if(userInfo.admin){
+            btnedit.forEach(function(elem){
+              elem.classList.remove('hidden');
+
+            });
+
+            btndelete.forEach(function(elem){
+              elem.classList.remove('hidden');
+
+            });
+            
+            //btndelete.classList.remove('hidden');
+            
+            
+            
+          }
+
+      
+
+
       }
 
     
@@ -37,3 +71,5 @@ authSignout.addEventListener('click', function(event) {
   event.preventDefault();
   firebase.auth().signOut();
 });
+
+

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <header class="header_shop">
     <div class="content_nav">
         <img src="./img/image 2.png" alt="logo" height="100" width="200">
@@ -43,26 +43,26 @@
 
 
 </header>
-<body class="bodyfull--secondary fixedbody">
+<body>
 
-    <h1 class="titleshop">Carrito</h1>
+    
+        <div class="dataprofile">
+            <h3 class="dataprofile__name">Nombre</h3>
+            <h5 class="dataprofile__order">0</h5>
+            <h5 class="dataprofile__email">Email</h5>
+        </div>
+    
+        <div class="contentprofile">
+            <h4>Tus compras</h4>
 
+            <section class="dataorders">
 
-    <section class="cartProducts">
+            </section>
 
-    </section>
+    
+        </div>
 
-    <section class="bagProducts"> 
-        <p>Cantidad de productos:<span class="bagProductstotal_total"> 0</span></p>
-        <p>Cantidad total: $<span class="bagProductstotal_price"> 600.000</span></p>
-        <button class="btn productsTotalBag">
-            Comprar todo
-        </button>
-
-    </section>
-
-
-
+    
 
 
 
@@ -75,9 +75,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
     <script src="./scripts/firebase.js"></script>
-    <script src="./scripts/auth.js"></script>
-    <script src="./scripts/cartshop.js"></script>
-
+    <script src="./scripts/product.js"></script>
     
 </body>
 </html>

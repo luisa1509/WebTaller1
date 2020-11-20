@@ -5,6 +5,7 @@ const cartRef = db.collection('cart');
 let storageRef = firebase.storage().ref();
 const cartproductsList = document.querySelector('.cartProducts');
 const cantidadProducts = document.querySelector('.cantidad');
+const productsTotalBag = document.querySelector('.productsTotalBag');
 
 // creación de nuevos productos a partir de la lista
 function renderProductsCarts(listc) {
@@ -59,13 +60,20 @@ function getProductsCart() {
 
 
     renderProductsCarts(productsCartShopArray);
-
-    //cantidad de productos
     cantidadProducts.innerHTML=productsCartShopArray.length+"";
 
   });
   
 }
+
+productsTotalBag.addEventListener("click", function () {
+  
+
+  window.location.href = "./confirmar-compra.html";
+  
+});
+
+
 
 
 
