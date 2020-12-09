@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Document</title>
+    
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="spacing">
+				<div class="col col-sm-12 text-center">
+					<h1>Vara.js</h1>
+				</div>
+				<div class="col col-sm-12">
+					<div class="custom-file">
+					  	<input type="file" class="custom-file-input" id="fontFile">
+					  	<label class="custom-file-label" for="fontFile">Choose file</label>
+					</div>
+				</div>
+				<div class="col col-sm-12 margined hidden" id="filealert">
+					<div class="alert alert-danger alert-dismissable">
+					    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					    <span>The loaded font doesn't have the element with id `group`.</span>
+					</div>
+				</div>
+				<div class="col col-sm-12 margined hidden text-center" id="panel">
+					<p>Enter each letter in the order they appear below without space to name the characters easiy.</p>
+					<div class="input-group mb-3">
+					  	<input type="text" class="form-control" placeholder="Letters" aria-label="names" aria-describedby="basic-addon2" id="names">
+					  	<div class="input-group-append">
+					    	<button type="button" class="btn btn-primary" id="name" data-toggle="tooltip" data-placement="bottom" title="Name characters in order of the letters provided.">Name</button>
+					  	</div>
+					</div>
+					<button type="button" class="btn btn-outline-primary" id="generate" data-toggle="tooltip" data-placement="bottom" title="Generate the JSON data.">Generate</button>
+				</div>
+			</div>
+		</div>
+		<div class="generated-container">
+			<div class="row spacing" id="generated"></div>
+			<div class="row spacing" id="shade"></div>
+		</div>
+		<div class="invisible"><svg id="svg" viewBox="0 0 500 500"></svg></div>
+		<div class="row" id="size-reference">
+			<div class="col col-sm-6 col-md-3 col-lg-2"></div>
+		</div>
+	</div>
+	<div class="modal" id="popup">
+	  	<div class="modal-dialog">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h4 class="modal-title">Character : <span class="letter"></span></h4>
+	        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      		</div>
+	      		<div class="modal-body">
+	      			<p class="text-muted" id="mmb">Tip: You can use mouse middle button to open this popup</p>
+					<div class="child">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="input-group mb-3">
+								  	<input type="text" class="form-control" placeholder="Character" aria-label="Character" aria-describedby="basic-addon2" id="inp-character" autofocus maxlength="1">
+								  	<div class="input-group-append">
+								    	<button type="button" class="btn btn-primary" id="sub-character" data-toggle="tooltip" data-placement="bottom">&check;</button>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h5>Display settings</h5>
+								<p>These settings do not affect the font, they are for viewing only</p>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<p>Position X:</p>
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<input type="range" id="inp-px" class="slider ds" min="-100" data-to="mcx" max="100"/>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<p>Position Y:</p>
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<input type="range" id="inp-py" class="slider ds" data-to="mcy" min="-100" max="100"/>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<p>Scale:</p>
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<input type="range" id="inp-scale" class="slider ds" data-to="s" min="1" max="100"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h5>Global settings</h5>
+								<p>These settings affects all characters</p>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<p>Stroke Line Join:</p>
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<input type="text" class="form-control" id="inp-slj" value="round" class="textBox"/>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<p>Stroke Line Cap:</p>
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<input type="text" class="form-control" id="inp-slc" value="round" class="textBox"/>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<p>Base Stroke Width:</p>
+							</div>
+							<div class="col-sm-12 col-md-8">
+								<input type="number" class="form-control" id="inp-sw" value="0.5" class="textBox"/>
+							</div>
+							<div class="col-sm-12">
+								<button class="btn btn-large btn-primary submit" id="gsubmit">Set</button>
+							</div>
+						</div>
+					</div>
+	      		</div>
+	      		<div class="modal-footer">
+	        		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+
+
+
+
+
+
+
+    <script src="./js/vara.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    
+</body>
+</html>
