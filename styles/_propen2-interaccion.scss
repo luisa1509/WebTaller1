@@ -117,6 +117,8 @@ section {
 
 .reveal__four {
     background-color: burlywood;
+    display: flex;
+    flex-direction: column;
 }
 
 .reveal__five{
