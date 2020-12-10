@@ -1,0 +1,110 @@
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: visible;
+}
+
+.scroll-down .arrow {
+    position: relative;
+    top: -4px;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+    background-size: contain;
+}
+
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveal {
+    position: relative;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0 10px;
+    font-weight: 500;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.reveal:nth-child(2) {
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.reveal img {
+    position: relative;
+    display: block;
+}
+
+.reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e02bff;
+    transform-origin: right;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.reveal:nth-child(2)::before {
+    background-color: #ffeb3b;
+}
+
+.reveal.active {
+    transform: scaleX(1);
+}
+
+.reveal.active::before {
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+
+
+.reveal__one {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+}
+
+.reveal__two {
+    background-color: aqua;
+}
+
+.reveal__three {
+    background-color: chartreuse;
+}
+
+.reveal__four {
+    background-color: burlywood;
+}
+
+.reveal__five{
+    background-color: darkslategrey;
+}
