@@ -1,4 +1,5 @@
 
+const pencilDetails = document.querySelector('.pencilDetails');
 
 const carrousel = document.querySelector('.gallery_carrousel');
 const carrouselStripe = document.querySelector('.gallery_carrousel__stripe');
@@ -41,3 +42,7 @@ function handleSlider () {
 }
 slider.addEventListener('input', handleSlider);
 
+pencilDetails.addEventListener("click", function () {
+  
+  window.location.href = "pencil.html";
+});

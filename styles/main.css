@@ -1810,4 +1810,166 @@ header {
 .contentprofile {
   color: white;
 }
+
+.textBox {
+  outline: 0;
+  padding: 2px;
+  font-size: 1.1em;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.spacing {
+  padding: 20px;
+  width: 100%;
+}
+
+.margined {
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+  position: absolute;
+  left: -999999px;
+}
+
+.square:before {
+  content: "";
+  display: block;
+  margin-top: 100%;
+}
+
+.generated-container {
+  position: relative;
+}
+
+#generated {
+  margin: 20px 0;
+}
+
+#shade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  margin: 0;
+}
+
+#generated .col, #shade .col {
+  padding: 0;
+}
+
+#generated .col .item, #shade .col .item {
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 20px -11px #000;
+          box-shadow: 0px 0px 20px -11px #000;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+#shade .col .item {
+  text-align: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 5px dotted #7d7d7d;
+}
+
+#shade .col .item:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#shade .col .item h2 {
+  vertical-align: middle;
+  display: inline-block;
+  color: #7d7d7d;
+}
+
+#generated .col .letter {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+#generated .col .options-button {
+  position: absolute;
+  top: 5px;
+  right: -50%;
+  -webkit-transition: right .5s;
+  transition: right .5s;
+  cursor: pointer;
+}
+
+#generated .col:hover .options-button {
+  right: 5px;
+}
+
+#pre {
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#panel.fixed {
+  position: fixed;
+  left: 0;
+  width: 80%;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  z-index: 99;
+  top: 0;
+}
+
+#panel.fixed #generate {
+  display: none;
+}
+
+#container {
+  width: 60%;
+  margin: 20px auto;
+  height: 800px;
+}
 /*# sourceMappingURL=main.css.map */

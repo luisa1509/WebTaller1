@@ -7,6 +7,7 @@ const loader = document.querySelector('.loader');
 const storage = window.localStorage;
 let selectedElem = null;
 
+
 var storageRef = firebase.storage().ref();
 
 const products = [];
