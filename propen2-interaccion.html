@@ -7,18 +7,17 @@
     <title>Document</title>
 </head>
 
+<div class="loader2 loader2--show">
+    <div id="container"></div>
+
+</div>
+
 <!-- Use it like any other HTML element -->
 <model-viewer id="orbit-demo" src="../model/scene.glb" alt="A 3D model of an wacom" disable-zoom camera-orbit="90deg 0deg "
-    shadow-intensity="7" shadow-softness="1" reveal="">
+    shadow-intensity="7" shadow-softness="1" reveal="manual">
 </model-viewer>
 <!-- camera-controls  auto-rotate 45deg 55deg 2.5m para lateral superior izquierda   -->
 <body>
-
-    <div class="loader2">
-        <div id="container"></div>
-
-    </div>
-
 
 	<script src="./scripts/vara.js" type="text/javascript"></script>
 	<script>
@@ -27,15 +26,22 @@
 				textAlign:"center",
 				strokeWidth:2.5,
 				y:200,
-				duration:1,
-				color:"#51C5D1",
+				duration:10000,
+                color:"#51C5D1",
+                autoAnimation:true,
+                id:"animationFuncionaPlox",
 				
 			}],{
 				fontSize:46
 			});
 			vara.ready(function(){
-				vara.draw("sphinx");
-			})
+				vara.draw("animationFuncionaPlox");
+            });
+            vara.animationEnd(function (i,o) {
+                document.getElementById('orbit-demo').reveal = "auto";
+                const loader = document.querySelector('.loader2');
+                loader.classList.remove('loader2--show');
+            })
 	</script>
     
 

@@ -1472,6 +1472,19 @@ header {
   display: block;
 }
 
+.loader2 {
+  display: none;
+}
+
+.loader2--show {
+  display: block;
+  position: relative;
+}
+
+#container {
+  position: relative;
+}
+
 .hidden {
   display: none;
 }
@@ -2001,6 +2014,10 @@ model-viewer {
   height: 100vh;
   position: fixed;
   top: 0;
+}
+
+model-viewer {
+  --poster-color: transparent;
 }
 
 section {

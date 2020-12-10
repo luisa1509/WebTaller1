@@ -207,7 +207,12 @@ background-color: black;
 
     &--show{
       display:block;
+      position: relative;
     }
+  }
+
+  #container{
+    position: relative;
   }
 
 .hidden{
