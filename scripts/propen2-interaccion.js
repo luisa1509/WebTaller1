@@ -5,6 +5,10 @@ const reveal__three = document.querySelector('.reveal__three');
 const reveal__four = document.querySelector('.reveal__four');
 const reveal__five = document.querySelector('.reveal__five');
 
+//loader
+//loader.classList.remove('loader2--show');
+const loader = document.querySelector('.loader2');
+
 const reveal = gsap.utils.toArray('.reveal');
 reveal.forEach((element, i) => {
     ScrollTrigger.create({
@@ -16,7 +20,7 @@ reveal.forEach((element, i) => {
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
     });
 
-
+   
 });
 
 var scroll1 = ScrollTrigger.create({
@@ -93,5 +97,6 @@ ScrollTrigger.addEventListener("scrollEnd", () => {
 });
 // scroll down arrow animation
 gsap.to(".arrow", { y: 12, ease: "power1.inOut", repeat: -1, yoyo: true });
+
 
 //const cameraOrbit = modelViewer.getCameraOrbit(); // Get the (possibly changed) value
