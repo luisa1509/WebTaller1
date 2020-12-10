@@ -2095,6 +2095,17 @@ section {
   position: relative;
 }
 
+.reveal__one--section h1 {
+  margin: 16px;
+  text-align: center;
+  font-size: 64px;
+}
+
+.reveal__one--section h2 {
+  margin: 8px;
+  text-align: center;
+}
+
 .reveal__two {
   background-color: aqua;
 }

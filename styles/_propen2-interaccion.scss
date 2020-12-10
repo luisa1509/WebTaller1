@@ -104,6 +104,17 @@ section {
         flex-direction: column;
         margin: 5%;
         position: relative;
+
+        h1{
+            margin: 16px;
+            text-align: center;
+            font-size: 64px;
+        }
+
+        h2{
+            margin: 8px;
+            text-align: center;
+        }
     }
 }
 
