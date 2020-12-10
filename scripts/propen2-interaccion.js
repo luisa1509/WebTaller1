@@ -11,7 +11,7 @@ reveal.forEach((element, i) => {
         trigger: element,
         toggleClass: 'active',
         start: "top 90%", //Animation start at this point
-        end: "top 20%", //Animation end at this point
+        end: "top -5%", //Animation end at this point
         markers: true,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
     });
@@ -22,8 +22,8 @@ reveal.forEach((element, i) => {
 var scroll1 = ScrollTrigger.create({
     trigger: reveal__one,
     toggleClass: 'active',
-        start: "top 90%", //Animation start at this point
-        end: "bottom 20%", //Animation end at this point
+        start: "top 50%", //Animation start at this point
+        end: "bottom 50%", //Animation end at this point
         markers: true,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
@@ -31,8 +31,8 @@ var scroll1 = ScrollTrigger.create({
 var scroll2 = ScrollTrigger.create({
     trigger: reveal__two,
     toggleClass: 'active',
-        start: "top 90%", //Animation start at this point
-        end: "bottom 20%", //Animation end at this point
+        start: "top 50%", //Animation start at this point
+        end: "bottom 50%", //Animation end at this point
         markers: true,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
@@ -40,8 +40,8 @@ var scroll2 = ScrollTrigger.create({
 var scroll3 = ScrollTrigger.create({
     trigger: reveal__three,
     toggleClass: 'active',
-        start: "top 90%", //Animation start at this point
-        end: "bottom 20%", //Animation end at this point
+        start: "top 50%", //Animation start at this point
+        end: "bottom 50%", //Animation end at this point
         markers: true,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
@@ -49,8 +49,8 @@ var scroll3 = ScrollTrigger.create({
 var scroll4 = ScrollTrigger.create({
     trigger: reveal__four,
     toggleClass: 'active',
-        start: "top 90%", //Animation start at this point
-        end: "bottom 20%", //Animation end at this point
+        start: "top 50%", //Animation start at this point
+        end: "bottom 50%", //Animation end at this point
         markers: true,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
@@ -58,8 +58,8 @@ var scroll4 = ScrollTrigger.create({
 var scroll5 = ScrollTrigger.create({
     trigger: reveal__five,
     toggleClass: 'active',
-        start: "top 90%", //Animation start at this point
-        end: "bottom 20%", //Animation end at this point
+        start: "top 50%", //Animation start at this point
+        end: "bottom 50%", //Animation end at this point
         markers: true,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
@@ -73,7 +73,7 @@ ScrollTrigger.create({
 
 window.addEventListener('scroll', () => {
     //modelViewer.cameraOrbit = `90deg 0deg ${window.scrollY % 100}%`; // Set the value
-    console.log(modelViewer.cameraOrbit);
+    //console.log(modelViewer.cameraOrbit);
 
 });
 

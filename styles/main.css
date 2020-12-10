@@ -2079,6 +2079,11 @@ section {
 
 .reveal__one {
   background-color: tomato;
+}
+
+.reveal__one--section {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2086,6 +2091,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 5%;
+  position: relative;
 }
 
 .reveal__two {
@@ -2102,5 +2109,34 @@ section {
 
 .reveal__five {
   background-color: darkslategrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reveal__five h1 {
+  margin: 16px;
+}
+
+.reveal__five img {
+  margin: auto 0;
+  width: 70%;
+}
+
+.reveal__five p {
+  margin: 8px;
+}
+
+.reveal__five .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 /*# sourceMappingURL=main.css.map */
