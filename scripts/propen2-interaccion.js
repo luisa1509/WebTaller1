@@ -6,8 +6,6 @@ const reveal__four = document.querySelector('.reveal__four');
 const reveal__five = document.querySelector('.reveal__five');
 
 //loader
-//loader.classList.remove('loader2--show');
-const loader = document.querySelector('.loader2');
 
 const reveal = gsap.utils.toArray('.reveal');
 reveal.forEach((element, i) => {
