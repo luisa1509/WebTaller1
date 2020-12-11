@@ -1,6 +1,7 @@
 body{
     width: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .scroll{
@@ -10,7 +11,7 @@ body{
         bottom: 30px;
         left: 50%;
         transform: translate(-50%, 0);
-        color: black;
+        color: white;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 16px;
@@ -24,7 +25,7 @@ body{
         margin: 0 auto;
         width: 20px;
         height: 20px;
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+        background-image: url(./../imgInteraccion/flecha-hacia-abajo.svg);
         background-size: contain;
 
     }
@@ -106,7 +107,6 @@ section {
 
 
 .reveal__one {
-    background-color: tomato;
 
     &--section{
         width: 100%;
@@ -130,7 +130,6 @@ section {
 }
 
 .reveal__two {
-    background-color: aqua;
 
     &--section{
         width: 100%;
@@ -161,7 +160,6 @@ section {
 }
 
 .reveal__three {
-    background-color: chartreuse;
     &--section{
         width: 100%;
         height: 100%;
@@ -185,9 +183,9 @@ section {
 }
 
 .reveal__four {
-    background-color: burlywood;
     display: flex;
     flex-direction: column;
+    font-size: 24px;
     &--section{
         width: 100%;
         height: 100%;
@@ -195,11 +193,18 @@ section {
         flex-direction: column;
         margin: 5% 16px;
         position: relative;
+        justify-content: space-evenly;
+
+        p{
+            padding-left: 5%;
+            width: 30%;
+            font-size: 24px !important;
+            font-weight: 600 !important;
+        }
     }
 }
 
 .reveal__five{
-    background-color: darkslategrey;
     display: flex;
     flex-direction: column;
 

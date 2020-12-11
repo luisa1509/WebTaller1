@@ -1991,6 +1991,7 @@ header {
 body {
   width: 100%;
   overflow: hidden;
+  background-color: black;
 }
 
 .scroll-down {
@@ -1999,7 +2000,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  color: black;
+  color: white;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
@@ -2012,7 +2013,7 @@ body {
   margin: 0 auto;
   width: 20px;
   height: 20px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+  background-image: url(./../imgInteraccion/flecha-hacia-abajo.svg);
   background-size: contain;
 }
 
@@ -2101,10 +2102,6 @@ section {
           transition-delay: 0.5s;
 }
 
-.reveal__one {
-  background-color: tomato;
-}
-
 .reveal__one--section {
   width: 100%;
   height: 100%;
@@ -2128,10 +2125,6 @@ section {
 .reveal__one--section h2 {
   margin: 8px;
   text-align: center;
-}
-
-.reveal__two {
-  background-color: aqua;
 }
 
 .reveal__two--section {
@@ -2171,10 +2164,6 @@ section {
   bottom: 0;
 }
 
-.reveal__three {
-  background-color: chartreuse;
-}
-
 .reveal__three--section {
   width: 100%;
   height: 100%;
@@ -2201,7 +2190,6 @@ section {
 }
 
 .reveal__four {
-  background-color: burlywood;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2209,6 +2197,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 24px;
 }
 
 .reveal__four--section {
@@ -2223,10 +2212,19 @@ section {
           flex-direction: column;
   margin: 5% 16px;
   position: relative;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.reveal__four--section p {
+  padding-left: 5%;
+  width: 30%;
+  font-size: 24px !important;
+  font-weight: 600 !important;
 }
 
 .reveal__five {
-  background-color: darkslategrey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
