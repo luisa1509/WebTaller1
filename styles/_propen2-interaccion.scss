@@ -85,14 +85,14 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e02bff;
+    background: $primary-color;
     transform-origin: right;
     transition: 0.5s;
     transition-delay: 0s;
 }
 
 .reveal:nth-child(2)::before {
-    background-color: #ffeb3b;
+    background-color: $secundary-color;
 }
 
 .reveal.active {
