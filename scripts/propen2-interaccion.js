@@ -14,7 +14,7 @@ reveal.forEach((element, i) => {
         toggleClass: 'active',
         start: "top 90%", //Animation start at this point
         end: "top -5%", //Animation end at this point
-        markers: true,
+        markers: false,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
     });
 
@@ -26,7 +26,7 @@ var scroll1 = ScrollTrigger.create({
     toggleClass: 'active',
         start: "top 50%", //Animation start at this point
         end: "bottom 50%", //Animation end at this point
-        markers: true,
+        markers: false,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
 
@@ -35,7 +35,7 @@ var scroll2 = ScrollTrigger.create({
     toggleClass: 'active',
         start: "top 50%", //Animation start at this point
         end: "bottom 50%", //Animation end at this point
-        markers: true,
+        markers: false,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
 
@@ -44,7 +44,7 @@ var scroll3 = ScrollTrigger.create({
     toggleClass: 'active',
         start: "top 50%", //Animation start at this point
         end: "bottom 50%", //Animation end at this point
-        markers: true,
+        markers: false,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
 
@@ -53,7 +53,7 @@ var scroll4 = ScrollTrigger.create({
     toggleClass: 'active',
         start: "top 50%", //Animation start at this point
         end: "bottom 50%", //Animation end at this point
-        markers: true,
+        markers: false,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
 
@@ -62,7 +62,7 @@ var scroll5 = ScrollTrigger.create({
     toggleClass: 'active',
         start: "top 50%", //Animation start at this point
         end: "bottom 50%", //Animation end at this point
-        markers: true,
+        markers: false,
         scrub: { snapTo: "labels", duration: 0.15, delay: 0.5, ease: "power3.inOut" }
 });
 
