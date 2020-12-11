@@ -8,32 +8,6 @@
 </head>
 
 
-
-
-	<script src="./scripts/vara.js" type="text/javascript"></script>
-	<script>
-		var vara = new Vara("#container","./fonts/Satisfy/SatisfySL.json",[{
-				text:"Live. Dare. Create.",
-				textAlign:"center",
-				strokeWidth:2.5,
-				y:200,
-				duration:3000,
-                color:"#51C5D1",
-                autoAnimation:true,
-                id:"animationFuncionaPlox",
-				
-			}],{
-				fontSize:46
-			});
-			vara.ready(function(){
-				vara.draw("animationFuncionaPlox");
-            });
-            vara.animationEnd(function (i,o) {
-                document.getElementById('orbit-demo').reveal = "auto";
-                const loader = document.querySelector('.loader2');
-                loader.classList.remove('loader2--show');
-            })
-	</script>
     
 <body>
     <div class="loader2 loader2--show">
