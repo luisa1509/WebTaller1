@@ -21,6 +21,7 @@
             <div class="scroll loader">
                 <div class="scroll-down">Scroll down<div class="arrow"></div></div>
                 <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+                <img src="img/Wacom Cintiq Pro 32-3.png" alt="wacom">
             </div>
         </div>
         </div>
@@ -43,6 +44,7 @@
             <p class="reveal">Anillos de color de aluminio intercambiables.</p>
             <p class="reveal">Estuche protector para bolígrafo con puntas de repuesto y herramienta removedora de plumas.</p>
             <p class="reveal">Borrador: Voltea el lápiz hacia el lado opuesto de la punta del lápiz y mover el borrador sobre el área que desea borrar</p>
+            <img src="img/Wacom Cintiq Pro 32-1.png" alt="wacom medio">
         </div>
 
     </section>
@@ -94,7 +96,11 @@ shadow-intensity="7" shadow-softness="1" reveal="manual">
             const loader = document.querySelector('.loader2');
             loader.classList.remove('loader2--show');
             document.querySelector('.scroll').classList.remove('loader');
-
+            document.querySelectorAll('.reveal').forEach(
+                element =>  {
+                    element.style.color = "white";
+                }
+            );
         })
 </script>
 </html>

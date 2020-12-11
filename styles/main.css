@@ -1474,6 +1474,7 @@ header {
 
 .loader2 {
   display: none;
+  background-color: black;
 }
 
 .loader2--show {
@@ -2044,7 +2045,7 @@ section {
 
 .reveal {
   position: relative;
-  color: #fff;
+  color: black;
   font-size: 2.5rem;
   padding: 0 10px;
   font-weight: 500;
@@ -2125,6 +2126,12 @@ section {
 .reveal__one--section h2 {
   margin: 8px;
   text-align: center;
+}
+
+.reveal__one--section img {
+  position: absolute;
+  width: 40%;
+  right: 30%;
 }
 
 .reveal__two--section {
@@ -2222,6 +2229,12 @@ section {
   width: 30%;
   font-size: 24px !important;
   font-weight: 600 !important;
+}
+
+.reveal__four--section img {
+  position: absolute;
+  right: -20%;
+  width: 60%;
 }
 
 .reveal__five {
