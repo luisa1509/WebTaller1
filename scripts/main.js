@@ -44,5 +44,5 @@ slider.addEventListener('input', handleSlider);
 
 pencilDetails.addEventListener("click", function () {
   
-  window.location.href = "pencil.html";
+  window.location.href = "propen2-interaccion.html";
 });
