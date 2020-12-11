@@ -7,18 +7,10 @@
     <title>Document</title>
 </head>
 
-<div class="loader2 loader2--show">
-    <div id="container"></div>
 
-</div>
 
-<!-- Use it like any other HTML element -->
-<model-viewer id="orbit-demo" src="../model/scene.glb" alt="A 3D model of an wacom" disable-zoom camera-orbit="90deg 0deg "
-    shadow-intensity="7" shadow-softness="1" reveal="manual">
-</model-viewer>
-<!-- camera-controls  auto-rotate 45deg 55deg 2.5m para lateral superior izquierda   -->
-<body>
 
+<<<<<<< HEAD
 	<script src="./scripts/vara.js" type="text/javascript"></script>
 	<script>
 		var vara = new Vara("#container","./fonts/Satisfy/SatisfySL.json",[{
@@ -44,12 +36,18 @@
             })
 	</script>
     
+=======
+<body>
+    <div class="loader2 loader2--show">
+        <div id="container"></div>
+    </div>
+>>>>>>> 571d6ef60bab0ca337e2f0f2ab84f31317a51ce0
 
     <section class="reveal__one">
         <div class="reveal__one--section">
             <h1 class="reveal">WACOM PRO PEN 2</h1>
             <h2 class="reveal">Wacom Pro Pen 2 está diseñado para mejorar la precisión, control y sensibilidad.</h2>
-            <div class="scroll">
+            <div class="scroll loader">
                 <div class="scroll-down">Scroll down<div class="arrow"></div></div>
                 <div class="scroll-down">Scroll down<div class="arrow"></div></div>
             </div>
@@ -82,6 +80,12 @@
             <button class="btn">Volver a la tienda</button>
         </section>
     </section>
+
+    <!-- Use it like any other HTML element -->
+<model-viewer id="orbit-demo" src="../model/scene.glb" alt="A 3D model of an wacom" disable-zoom camera-orbit="90deg 0deg "
+shadow-intensity="7" shadow-softness="1" reveal="manual">
+</model-viewer>
+<!-- camera-controls  auto-rotate 45deg 55deg 2.5m para lateral superior izquierda   -->
 </body>
 
 
@@ -91,5 +95,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <script src="scripts/propen2-interaccion.js"></script>
+<script src="./scripts/vara.js" type="text/javascript"></script>
+<script>
+    var vara = new Vara("#container","./fonts/Satisfy/SatisfySL.json",[{
+            text:"Live. Dare. Create.",
+            textAlign:"center",
+            strokeWidth:2.5,
+            y:200,
+            duration:3000,
+            color:"#51C5D1",
+            autoAnimation:true,
+            id:"animationFuncionaPlox",
+            
+        }],{
+            fontSize:46
+        });
+        vara.ready(function(){
+            vara.draw("animationFuncionaPlox");
+        });
+        vara.animationEnd(function (i,o) {
+            document.getElementById('orbit-demo').reveal = "auto";
+            const loader = document.querySelector('.loader2');
+            loader.classList.remove('loader2--show');
+            document.querySelector('.scroll').classList.remove('loader');
 
+        })
+</script>
 </html>
